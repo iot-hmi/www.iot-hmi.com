@@ -1,0 +1,713 @@
+body#web {
+    margin: 0;
+    background-color: black;
+}
+
+#web { background: black;
+    color: white;
+}
+
+#panelpage {
+    padding: 11rem 0 0;
+    position: relative;
+}
+
+#panelpage .tablebox .title a {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#panelpage .tablebox .title a:hover {
+    color: #a8ad00;
+}
+
+/* ---------------- */
+
+#panelpage .descbox {
+    margin: 60px auto 0
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 1rem 15vw;
+}
+
+#panelpage .descbox .title {
+    margin: 0 0 30px;
+    width: auto;
+}
+
+#panelpage .descbox .title .tt{
+    display: block;
+}
+
+#panelpage .descbox .title .tt .word {
+    font-size: 1.3rem;
+    font-family: 'IBM Plex Sans';
+    font-weight: 700;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    color: #7CCAD1;
+    height: auto;
+    padding: unset;
+}
+
+#panelpage .descbox .cont {
+    padding: 0 0 0 2px;
+    top: 100px;
+    opacity: 0;
+    position: relative;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s
+}
+
+#panelpage .descbox .cont p {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+#panelpage .descbox .cont ul {
+    margin-top: 1rem;
+}
+
+#panelpage .descbox .cont ul, 
+#panelpage .descbox .cont ul li {
+    font-size: 1.5rem;
+    line-height: 2.7rem;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+#panelpage .descbox .cont .samplelink {
+    margin: 30px;
+}
+
+#panelpage .descbox .cont .samplelink .button {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 2.7rem;
+    border: 1px solid;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 12.2rem;
+    align-items: center;
+    text-decoration: none;
+    margin-left: calc(50% - 6.1rem);
+}
+
+#panelpage .descbox.active .cont {
+    opacity: 1;
+    top: 0
+}
+
+#panelpage .box {
+    width: calc(82% - 150px);
+    margin: 0 0 0 15%;
+    padding: 11rem 0 0;
+}
+
+#panelpage li::before {
+    content: "✓";
+    /* Insert content that looks like bullets */
+    position: absolute;
+    left: 0;
+    /*    color: blue; /* Or a color you prefer */
+}
+
+#panelpage .box .boxtitle {
+    letter-spacing: 5px;
+    position: relative
+}
+
+#panelpage .box .boxtitle .tt {
+    text-align: right;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 0 30% 50px 0;
+    text-transform: uppercase;
+    font-size: 65px; /* old settings */
+}
+
+#panelpage .box .boxtitle .line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 330px;
+    width: 30%
+}
+
+#panelpage .box .boxtitle .line img {
+    width: 100%
+}
+
+#panelpage .box .leftbox,
+#panelpage .box .rightbox {
+    display: inline-block;
+    vertical-align: top
+}
+
+#panelpage .box .leftbox {
+    width: 650px;
+    position: relative;
+    padding: 0 50px
+}
+
+#panelpage .box .rightbox {
+    width: calc(100% - 655px)
+}
+
+#panelpage .box .rightbox .linebox {
+    width: 100%;
+    height: 60px;
+    position: relative
+}
+
+#panelpage .box .rightbox .linebox .leftline,
+#panelpage .box .rightbox .linebox .topline {
+    position: absolute
+}
+
+#panelpage .box .rightbox .linebox .leftline {
+    top: 0;
+    height: 0;
+    width: 1px;
+    left: 0;
+    background: #FFF;
+    transition: height .3s .5s;
+    -moz-transition: height .3s .5s;
+    -webkit-transition: height .3s .5s;
+    -o-transition: height .3s .5s
+}
+
+#panelpage .box .rightbox .linebox .topline {
+    top: 0;
+    right: 0;
+    background: #FFF;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s
+}
+
+#panelpage .box .rightbox .linebox.active .leftline {
+    height: 60px
+}
+
+#panelpage .box .rightbox .linebox.active .topline {
+    width: 100%
+}
+
+#panelpage .box .rightbox .descbox,
+#panelpage .box .rightbox .featurebox,
+#panelpage .box .rightbox .tablebox {
+    margin: 60px auto 0
+}
+
+#panelpage .box .rightbox .descbox .title,
+#panelpage .box .rightbox .featurebox .title,
+#panelpage .box .rightbox .tablebox .title {
+    width: 80%;
+    margin: 0 0 30px
+}
+
+#panelpage .box .rightbox .descbox .cont,
+#panelpage .box .rightbox .featurebox .cont,
+#panelpage .box .rightbox .tablebox .cont {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 0 0 0 2px;
+    top: 100px;
+    opacity: 0;
+    position: relative;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s
+}
+
+#panelpage .box .rightbox .descbox.active .cont,
+#panelpage .box .rightbox .featurebox.active .cont,
+#panelpage .box .rightbox .tablebox.active .cont {
+    opacity: 1;
+    top: 0
+}
+
+#panelpage .downline {
+    position: relative;
+    height: 60px;
+    width: 50%;
+    margin: 0 0 0 50%
+}
+
+#panelpage .downline .ball,
+#panelpage .downline .center,
+#panelpage .downline .right {
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#panelpage .downline .right {
+    width: 40%;
+    right: 0;
+    background: url(/images/iot/dark_downright.svg) 0 100% no-repeat
+}
+
+#panelpage .downline .center {
+    width: 10%;
+    right: 40%;
+    background: url(/images/iot/dark_downline.svg) 100% 100% repeat-x
+}
+
+#panelpage .downline .ball {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    right: 50%
+}
+
+#panelpage .downline.active .ball {
+    right: 100%
+}
+
+#panelpage .downline.active .center {
+    width: 60%
+}
+
+#panelpage .video1 {
+    width: 99vw;
+}
+
+#panelpage .upline {
+    height: 60px;
+    width: 15vw;
+    top: 800px;
+}
+
+#panelpage .upline .ball,
+#panelpage .upline .center,
+#panelpage .upline .left {
+    position: absolute;
+    height: 200px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#panelpage .upline .left {
+    background: url(/images/iot/dark_proleft1.svg) 0 100% no-repeat;
+    width: 168px;
+    left: 0
+}
+
+#panelpage .upline .center {
+    background: url(/images/iot/dark_proleft2.svg) 0 100% repeat-x;
+    left: 168px;
+    width: 10%
+}
+
+#panelpage .upline .ball {
+    background: url(/images/iot/dark_proleft3.svg) 0 100% no-repeat;
+    width: 17px;
+    left: calc(168px + 10%)
+}
+
+#panelpage .upline.active .ball {
+    left: 50%
+}
+
+#panelpage .upline.active .center {
+    width: calc(50% - 168px)
+}
+
+#panelpage .newline {
+    position: relative;
+    height: 60px;
+    width: 99vw;
+    margin: 0 auto 0 auto;
+}
+
+#panelpage .newline .ball1,
+#panelpage .newline .center,
+#panelpage .newline .ball2 {
+    position: absolute;
+    height: 30px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+
+#panelpage .newline .center {
+    width: 20vw;
+    left: 40vw;
+    background: url(/images/iot/dark_downline.svg) 100% 100% repeat-x
+}
+
+#panelpage .newline .ball1 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    right: calc(40vw - 17px);
+}
+
+#panelpage .newline .ball2 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    left: calc(40vw - 17px);
+}
+
+
+#panelpage .newline.active .ball1 {
+    right: calc(30vw - 17px);
+}
+
+#panelpage .newline.active .ball2 {
+    left: calc(30vw - 17px);
+}
+
+#panelpage .newline.active .center {
+    width: calc(40vw - 17px);
+    left: 30vw;
+}
+
+#panelpage .newline {
+    position: relative;
+    height: 60px;
+    width: 99vw;
+    margin: 0 auto 0 auto;
+}
+
+#panelpage .newline .ball1,
+#panelpage .newline .center,
+#panelpage .newline .ball2 {
+    position: absolute;
+    height: 30px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+
+#panelpage .newline .center {
+    width: 20vw;
+    left: 40vw;
+    background: url(/images/iot/dark_downline.svg) 100% 100% repeat-x
+}
+
+#panelpage .newline .ball1 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    right: calc(40vw - 17px);
+}
+
+#panelpage .newline .ball2 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    left: calc(40vw - 17px);
+}
+
+
+#panelpage .newline.active .ball1 {
+    right: calc(30vw - 17px);
+}
+
+#panelpage .newline.active .ball2 {
+    left: calc(30vw - 17px);
+}
+
+#panelpage .newline.active .center {
+    width: calc(40vw - 17px);
+    left: 30vw;
+}
+
+#panelpage .newline2 {
+    position: relative;
+    height: 60px;
+    width: 99vw;
+    margin: 0 auto 0 auto;
+}
+
+#panelpage .newline2 .ball1,
+#panelpage .newline2 .center,
+#panelpage .newline2 .ball2 {
+    position: absolute;
+    height: 30px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+
+#panelpage .newline2 .center {
+    width: 20vw;
+    left: 40vw;
+    background: url(/images/iot/dark_downline.svg) 100% 100% repeat-x
+}
+
+#panelpage .newline2 .ball1 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    right: calc(40vw - 17px);
+}
+
+#panelpage .newline2 .ball2 {
+    width: 17px;
+    background: url(/images/iot/dark_downball.svg) bottom no-repeat;
+    left: calc(40vw - 17px);
+}
+
+
+#panelpage .newline2.active .ball1 {
+    right: calc(30vw - 17px);
+}
+
+#panelpage .newline2.active .ball2 {
+    left: calc(30vw - 17px);
+}
+
+#panelpage .newline2.active .center {
+    width: calc(40vw - 17px);
+    left: 30vw;
+}
+
+@media (max-width:1650px) {
+    #panelpage .box .boxtitle .tt {
+        padding: 0 32% 50px 0
+    }
+}
+
+@media (max-width:1500px) {
+    #panelpage .upline {
+        width: 35%
+    }
+
+    #panelpage .box {
+        width: calc(90% - 100px);
+        margin: 0 auto
+    }
+
+    #panelpage .box .rightbox {
+        width: calc(100% - 455px)
+    }
+
+    #panelpage .box .leftbox {
+        width: 450px;
+        height: 350px;
+        position: relative;
+        padding: 0 20px
+    }
+
+    #panelpage .box .boxtitle .tt {
+        padding: 0 27% 30px 0
+    }
+
+    #panelpage .box .boxtitle .line {
+        width: 25%
+    }
+}
+
+@media (max-width:1100px) {
+    #panelpage .box {
+        width: calc(100% - 150px)
+    }
+}
+
+@media (max-width:992px) {
+    #panelpage .box .boxtitle .line {
+        display: none
+    }
+
+    #panelpage .box .boxtitle .tt {
+        padding: 0 0 30px;
+        text-align: center
+    }
+
+    #panelpage .box .leftbox {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 350px
+    }
+
+    #panelpage .box .rightbox {
+        width: 100%;
+        margin: 20px 0 0
+    }
+
+    #panelpage .box .rightbox .linebox,
+    #panelpage .upline {
+        display: none
+    }
+}
+
+@media (max-width:768px) {
+    #panelpage .box {
+        width: 100%;
+        padding: 150px 0 0
+    }
+
+    #panelpage .box .boxtitle {
+        letter-spacing: 2px;
+        padding: 0 10px
+    }
+
+    #panelpage .box .leftbox {
+        width: 300px;
+        padding: 0;
+        height: auto
+    }
+
+    #panelpage .box .rightbox {
+        padding: 0 10px;
+        width: calc(100% - 20px)
+    }
+
+    #panelpage .downline {
+        width: 70%;
+        margin: 0 0 50px 30%
+    }
+}
+
+@media (max-width:500px) {
+    #panelpage .box {
+        width: 270px;
+        padding: 71px 0 0 0;
+    }
+
+    #panelpage .box .boxtitle {
+        letter-spacing: 2px;
+        padding: 0 10px
+    }
+
+    #panelpage .box .boxtitle .tt {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    #panelpage .box .leftbox {
+        width: 300px;
+        padding: 0;
+        height: auto
+    }
+
+    #panelpage .box .rightbox {
+        padding: 0 10px;
+        width: calc(100% - 20px)
+    }
+
+    #panelpage .box .rightbox .tablebox {
+        margin: 0;
+    }
+
+    #panelpage .downline {
+        display: none;
+    }
+
+    #panelpage .newline {
+        display: none;
+    }
+
+    #panelpage .newline2 {
+        display: none;
+    }
+
+    #panelpage .descbox .title .tt .word {
+        font-size: 0.8rem;
+        font-family: 'IBM Plex Sans';
+        font-weight: 700;
+        line-height: 1.3rem;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        color: #7CCAD1;
+    }
+    
+    #panelpage .descbox .cont p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: #FFFFFF;
+        margin-bottom: 0;
+    }
+    
+    #panelpage .descbox .cont ul, 
+    #panelpage .descbox .cont ul li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-family: 'Roboto';
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+    
+    #panelpage .descbox .cont .samplelink {
+        margin: 30px;
+    }
+    
+    #panelpage .descbox .cont .samplelink .button {
+        color: #FFFFFF;
+        font-family: 'Roboto';
+        font-size: 0.5rem;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 1.5rem;
+        border: 1px solid;
+        border-radius: 5rem;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 6.8rem;
+        align-items: center;
+        text-decoration: none;
+        margin-left: calc(50% - 3.4rem);
+    }
+}
+
+/* title dark theme */
+
+#page-container-layout .title .tt .line {
+    background: url(/images/iot/dark_titleline.svg) 100% 0 no-repeat;
+}
+
+#page-container-layout .title .tt .line .sss {
+}
+
+#page-container-layout .title .tt .line .ll {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#page-container-layout .title .decoration1 {
+}
+
+#page-container-layout .title .decoration2 {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#page-container-layout .title .decoration2,
+#page-container-layout .title .pic {
+}
+
+#page-container-layout .title .pic {
+}

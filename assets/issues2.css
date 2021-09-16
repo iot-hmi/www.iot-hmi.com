@@ -1,0 +1,178 @@
+.myissuebox { 
+    margin-bottom: 50px;
+}
+
+.processed {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px
+}
+
+label.error {
+    text-align: right !important;
+    width: 80% !important;
+    display: inline !important;
+}
+
+label.error {
+    color: red !important;
+    font-style: italic !important;
+}
+
+.formbox {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.formbox button {
+    margin: 0 auto;
+    display: block
+}
+
+.formbox .sendBtn,
+.formbox button {
+    background: none;
+    border: none;
+    width: 355px;
+    height: 80px
+}
+
+.formbox .sendBtn {
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden
+}
+
+.formbox .sendBtn .ll {
+    position: absolute;
+    width: 355px;
+    height: 80px;
+    top: 15px;
+    left: -275px;
+    transition: left .5s;
+    -moz-transition: left .5s;
+    -webkit-transition: left .5s;
+    -o-transition: left .5s
+}
+
+.formbox .sendBtn .pic {
+    color: #c2c3c3;
+    font-size: 59px;
+    font-family: Avenir Next;
+    font-weight: 700;
+    letter-spacing: 5px;
+    transition: color .5s;
+    -moz-transition: color .5s;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    text-align: center
+}
+
+.formbox .sendBtn:hover .ll {
+    left: 0
+}
+
+.formbox .sendBtn:hover .pic {
+    color: #7CCAD1;
+    opacity: .5;
+}
+
+.formbox .issuelist .inputlist {
+    position: relative;
+    padding: 20px 25px
+}
+
+.formbox .issuelist .inputlist .line {
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    width: 50px;
+    height: 5px;
+    background: #7CCAD1
+}
+
+.formbox .issuelist .inputlist.active .line {
+    width: 100%
+}
+
+.formbox .issuelist .inputlist label {
+    position: absolute;
+    left: 45px;
+    top: 40px;
+    color: #949595;
+    font-size: 18px;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    z-index: 1
+}
+
+.formbox .issuelist .inputlist label span {
+    font-size: 16px
+}
+
+.formbox .issuelist .inputlist select {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    color: #414042;
+    font-size: 20px;
+    margin-top: 40px;
+    outline: none;
+    padding: 20px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+.formbox .issuelist .inputlist input,
+.formbox .issuelist .inputlist textarea {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    width: calc(100% - 50px);
+    color: #414042;
+    font-size: 20px;
+    outline: none;
+    padding: 20px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+.formbox .issuelist .inputlist textarea {
+    margin: 0 0 -5px;
+    padding: 30px 20px;
+    height: 400px;
+    border: 1px solid #c2c3c3;
+    border-bottom: none;
+    min-height: 400px;
+    max-height: 400px;
+    width: 100%
+}
+
+.formbox .issuelist .inputlist input.hasValue+label,
+.formbox .issuelist .inputlist input:focus+label,
+.formbox .issuelist .inputlist textarea.hasValue+label,
+.formbox .issuelist .inputlist textarea:focus+label {
+    opacity: 0
+}
+
+.formbox .issuelist .inputlist.secline {
+    padding: 90px 25px 0
+}
+
+.formbox .issuelist .inputlist.secline label {
+    top: 120px
+}

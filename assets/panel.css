@@ -1,0 +1,543 @@
+#panelpage .tablebox .title a {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#panelpage .tablebox .title a:hover {
+    color: #a8ad00;
+}
+@media (max-width:1100px) {
+    #panelpage .tablebox .title a {
+        font-weight: 700;
+        font-size: 20x;
+    }
+}
+
+@media (max-width:768px) {
+    #panelpage .tablebox .title a {
+        font-weight: 700;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:550px) {
+    #panelpage .tablebox .title a {
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+
+
+#panelpage .box {
+    width: calc(82% - 150px);
+    margin: 0 0 0 15%;
+    padding: 200px 0 0
+}
+
+#panelpage li::before {
+    content: "✓";
+    /* Insert content that looks like bullets */
+    position: absolute;
+    left: 0;
+    /*    color: blue; /* Or a color you prefer */
+}
+
+#panelpage .box .boxtitle {
+    font-size: 65px;
+    font-weight: 700;
+    font-family: Avenir Next;
+    letter-spacing: 5px;
+    position: relative
+}
+
+#panelpage .box .boxtitle .tt {
+    text-align: right;
+    font-family: Avenir Next;
+    font-weight: 700;
+    padding: 0 30% 50px 0;
+    text-transform: uppercase
+}
+
+#panelpage .box .boxtitle .line {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 330px;
+    width: 30%
+}
+
+#panelpage .box .boxtitle .line img {
+    width: 100%
+}
+
+#panelpage .box .leftbox,
+#panelpage .box .rightbox {
+    display: inline-block;
+    vertical-align: top
+}
+
+#panelpage .box .leftbox {
+    width: 650px;
+    height: 550px;
+    position: relative;
+    padding: 0 50px
+}
+
+#panelpage .box .rightbox {
+    width: calc(100% - 655px)
+}
+
+#panelpage .box .rightbox .linebox {
+    width: 100%;
+    height: 60px;
+    position: relative
+}
+
+#panelpage .box .rightbox .linebox .leftline,
+#panelpage .box .rightbox .linebox .topline {
+    position: absolute
+}
+
+#panelpage .box .rightbox .linebox .leftline {
+    top: 0;
+    height: 0;
+    width: 1px;
+    left: 0;
+    background: #000;
+    transition: height .3s .5s;
+    -moz-transition: height .3s .5s;
+    -webkit-transition: height .3s .5s;
+    -o-transition: height .3s .5s
+}
+
+#panelpage .box .rightbox .linebox .topline {
+    top: 0;
+    right: 0;
+    background: #000;
+    width: 0;
+    height: 1px;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s
+}
+
+#panelpage .box .rightbox .linebox.active .leftline {
+    height: 60px
+}
+
+#panelpage .box .rightbox .linebox.active .topline {
+    width: 100%
+}
+
+#panelpage .box .rightbox .descbox,
+#panelpage .box .rightbox .featurebox,
+#panelpage .box .rightbox .tablebox {
+    margin: 60px auto 0
+}
+
+#panelpage .box .rightbox .descbox .title,
+#panelpage .box .rightbox .featurebox .title,
+#panelpage .box .rightbox .tablebox .title {
+    width: 80%;
+    margin: 0 0 30px
+}
+
+#panelpage .box .rightbox .descbox .cont,
+#panelpage .box .rightbox .featurebox .cont,
+#panelpage .box .rightbox .tablebox .cont {
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    padding: 0 0 0 2px;
+    top: 100px;
+    opacity: 0;
+    position: relative;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s
+}
+
+#panelpage .box .rightbox .descbox.active .cont,
+#panelpage .box .rightbox .featurebox.active .cont,
+#panelpage .box .rightbox .tablebox.active .cont {
+    opacity: 1;
+    top: 0
+}
+
+#panelpage .box .rightbox .btn .text {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    transform: scale(.5);
+    -ms-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -o-transform: scale(.5);
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    -moz-transition: transform .5s;
+    -webkit-transition: transform .5s;
+    -o-transition: transform .5s
+}
+
+#panelpage .box .rightbox .btn .text .hov,
+#panelpage .box .rightbox .btn .text .nor {
+    position: absolute;
+    transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s
+}
+
+#panelpage .box .rightbox .btn .text .hov {
+    opacity: 0
+}
+
+#panelpage .box .rightbox .btn .text .nor {
+    opacity: 1
+}
+
+#panelpage .box .rightbox .btn .text:hover {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1)
+}
+
+#panelpage .box .rightbox .btn .text:hover .hov {
+    opacity: 1
+}
+
+#panelpage .box .rightbox .btn .text:hover .nor {
+    opacity: 0
+}
+
+#panelpage .box .rightbox .btn .text,
+#panelpage .box .rightbox .btn .text .hov,
+#panelpage .box .rightbox .btn .text .nor {
+    width: 111px;
+    height: 105px
+}
+
+
+#panelpage .downline {
+    position: relative;
+    height: 60px;
+    width: 50%;
+    margin: 0 0 0 50%
+}
+
+#panelpage .downline .ball,
+#panelpage .downline .center,
+#panelpage .downline .right {
+    position: absolute;
+    height: 60px;
+    bottom: 0;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#panelpage .downline .right {
+    width: 40%;
+    right: 0;
+    background: url(/images/iot/downright.svg) 0 100% no-repeat
+}
+
+#panelpage .downline .center {
+    width: 10%;
+    right: 40%;
+    background: url(/images/iot/downline.svg) 100% 100% repeat-x
+}
+
+#panelpage .downline .ball {
+    width: 17px;
+    background: url(/images/iot/downball.svg) bottom no-repeat;
+    right: 50%
+}
+
+#panelpage .downline.active .ball {
+    right: 100%
+}
+
+#panelpage .downline.active .center {
+    width: 60%
+}
+
+#panelpage .upline {
+    position: absolute;
+    height: 60px;
+    width: 15%;
+    top: 800px
+}
+
+#panelpage .upline .ball,
+#panelpage .upline .center,
+#panelpage .upline .left {
+    position: absolute;
+    height: 200px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#panelpage .upline .left {
+    background: url(/images/iot/proleft1.svg) 0 100% no-repeat;
+    width: 168px;
+    left: 0
+}
+
+#panelpage .upline .center {
+    background: url(/images/iot/proleft2.svg) 0 100% repeat-x;
+    left: 168px;
+    width: 10%
+}
+
+#panelpage .upline .ball {
+    background: url(/images/iot/proleft3.svg) 0 100% no-repeat;
+    width: 17px;
+    left: calc(168px + 10%)
+}
+
+#panelpage .upline.active .ball {
+    left: 100%
+}
+
+#panelpage .upline.active .center {
+    width: calc(100% - 168px)
+}
+
+#sliderComponent {
+    position: absolute;
+    height: 100%;
+    width: calc(100% - 100px)
+}
+
+#crtlRowBtnFrame,
+.pictitle {
+    position: relative;
+    width: 50%;
+    margin: 50px -3px 0;
+    display: inline-block;
+    vertical-align: top
+}
+
+.pictitle {
+    padding: 5px 0 0
+}
+
+#crtlRowBtnFrame {
+    position: relative;
+    z-index: 10;
+    width: 50%;
+    text-align: right
+}
+
+#crtlRowBtnFrame .touchBox {
+    height: 10px;
+    width: 55px;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #000
+}
+
+#crtlRowBtnFrame .bg {
+    width: 55px;
+    height: 10px;
+    background: none
+}
+
+#crtlRowBtnFrame .touchBox.nowSliders .bg {
+    background: #000
+}
+
+.carousel {
+    height: 100%;
+    position: relative
+}
+
+.carousel .banner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s
+}
+
+.carousel .banner .picBg {
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0
+}
+
+.carousel .banner .photo-pc {
+    display: block
+}
+
+.carousel .banner .photo-mobile {
+    display: none
+}
+
+.carousel .banner.nowleave {
+    z-index: 2;
+    opacity: 0
+}
+
+.carousel .banner.active {
+    opacity: 1;
+    z-index: 3
+}
+
+@media (max-width:1650px) {
+    #panelpage .box .boxtitle {
+        font-size: 55px
+    }
+
+    #panelpage .box .boxtitle .tt {
+        padding: 0 32% 50px 0
+    }
+}
+
+@media (max-width:1500px) {
+    #panelpage .upline {
+        width: 35%
+    }
+
+    #panelpage .box {
+        width: calc(90% - 100px);
+        margin: 0 auto
+    }
+
+    #panelpage .box .rightbox {
+        width: calc(100% - 455px)
+    }
+
+    #panelpage .box .leftbox {
+        width: 450px;
+        height: 350px;
+        position: relative;
+        padding: 0 20px
+    }
+
+    #panelpage .box .boxtitle {
+        font-size: 45px
+    }
+
+    #panelpage .box .boxtitle .tt {
+        padding: 0 27% 30px 0
+    }
+
+    #panelpage .box .boxtitle .line {
+        width: 25%
+    }
+}
+
+@media (max-width:1100px) {
+    #panelpage .box {
+        width: calc(100% - 150px)
+    }
+}
+
+@media (max-width:992px) {
+    #sliderComponent {
+        width: 100%;
+        position: relative
+    }
+
+    #crtlRowBtnFrame,
+    .pictitle {
+        width: 100%;
+        margin: 10px 0
+    }
+
+    #crtlRowBtnFrame {
+        text-align: left
+    }
+
+    #crtlRowBtnFrame .touchBox {
+        width: 35px
+    }
+
+    .carousel {
+        height: 300px
+    }
+
+    #panelpage .box .boxtitle {
+        font-size: 40px
+    }
+
+    #panelpage .box .boxtitle .line {
+        display: none
+    }
+
+    #panelpage .box .boxtitle .tt {
+        padding: 0 0 30px;
+        text-align: center
+    }
+
+    #panelpage .box .leftbox {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 350px
+    }
+
+    #panelpage .box .rightbox {
+        width: 100%;
+        margin: 20px 0 0
+    }
+
+    #panelpage .box .rightbox .linebox,
+    #panelpage .upline {
+        display: none
+    }
+}
+
+@media (max-width:768px) {
+    #panelpage .box {
+        width: 100%;
+        padding: 150px 0 0
+    }
+
+    #panelpage .box .boxtitle {
+        letter-spacing: 2px;
+        font-size: 28px;
+        padding: 0 10px
+    }
+
+    #panelpage .box .leftbox {
+        width: 300px;
+        padding: 0;
+        height: auto
+    }
+
+    #panelpage .box .rightbox {
+        padding: 0 10px;
+        width: calc(100% - 20px)
+    }
+
+    #panelpage .downline {
+        width: 70%;
+        margin: 0 0 50px 30%
+    }
+}

@@ -1,0 +1,194 @@
+#samplepage {
+    padding: 11rem 0 0;
+    position: relative;
+}
+
+#samplepage .box,
+#samplepage .title {
+    margin: 0 10vw 0 15vw;
+    width: 75vw;
+}
+
+#samplepage .title .decoration1,
+#samplepage .title .tt {
+    display: inline-block;
+    vertical-align: top
+}
+
+#samplepage .title .tt {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 5px;
+    text-transform: uppercase
+}
+
+#samplepage .title .tt .word {
+    height: 49px;
+    padding: 0 30px 0 0;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 700
+}
+
+#samplepage .title .tt .word.notshow {
+    display: none
+}
+
+#samplepage .title .tt .line {
+    background: url(/images/iot/titleline.svg) 100% 0 no-repeat;
+    height: 30px;
+    width: 100%;
+    position: relative
+}
+
+#samplepage .title .tt .line .sss {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 0;
+    bottom: -5px
+}
+
+#samplepage .title .tt .line .ll {
+    width: calc(100% - 27px);
+    height: 30px;
+    border-bottom: 1px solid #000
+}
+
+#samplepage .title .decoration1 {
+    width: 330px;
+    height: 50px;
+    margin: 0 0 0 -5px
+}
+
+#samplepage .title .decoration2 {
+    width: 305px;
+    height: 50px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 8px 0 0;
+    margin: 0 -5px 0 0
+}
+
+#samplepage .title .decoration2 .rbtn,
+#samplepage .title .decoration2 input {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#samplepage .title .decoration2 .rbtn {
+    width: 35px;
+    height: 30px;
+    cursor: pointer
+}
+
+#samplepage .title .decoration2 button {
+    width: 35px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none
+}
+
+#samplepage .title .decoration2 input {
+    width: 255px;
+    height: 30px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-left: 1px solid #5b6670;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 5px;
+    outline: none
+}
+
+#samplepage .title .decoration2,
+#samplepage .title .pic {
+    display: inline-block;
+    vertical-align: top
+}
+
+#samplepage .title .pic {
+    width: 25px;
+    height: 50px
+}
+
+#samplepage .box {
+    margin-top: calc(10rem / 3);
+    /*height: calc(115rem / 3);*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+#samplepage .box .listbox_container {
+    margin-left: calc(15rem / 3 - 2rem);
+    width: calc(65vw - (100rem / 4.6875) + 4rem);
+    padding-left: 2rem;
+}
+
+#samplepage .box .listbox {
+    display: flex;
+    justify-content: space-between;;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*border: 1px solid red;*/
+    text-align: center;
+    height: calc(115rem / 3);
+    width: calc(65vw - (100rem / 4.6875));
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+#samplepage .box .itembox {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    margin-bottom: calc(5rem / 3);
+    /*border: 1px solid blue;*/
+}
+
+#samplepage .box .itembox .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(50rem / 3);
+    width: calc(22.5rem /1.875);
+    margin-right: calc(2rem /1.875);
+    /*border: 1px solid green;*/
+    text-align: left;
+}
+
+#samplepage .box .itembox .item_img {
+    display: inline-block;
+    max-width: 100%;
+    height: calc(25rem / 3);
+    color: #000000;
+    /*border: 1px solid blue;*/
+}
+
+#samplepage .box .itembox .item_desc {
+    display: inline-block;
+    width: 100%;
+    height: calc(15rem / 3);
+    font-size: 1.3rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+    color: #C1272D;
+    margin-top: calc(1.2rem / 3);
+    /*border: 1px solid red;*/
+}
+
+#samplepage .box .itembox .item_info {
+    display: inline-block;
+    width: 100%;
+    height: calc(5rem / 3);
+    font-size: 1rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #000000;
+    /*border: 1px solid yellow;*/
+}
+
+

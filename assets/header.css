@@ -1,0 +1,855 @@
+header.color .menu .box {
+    border: 1px solid #000
+}
+
+header.color .menu .box .menuicon {
+    color: #000
+}
+
+header.color .menu .downpic .ww {
+    opacity: 0
+}
+
+header.color .menu .downpic .bb {
+    opacity: 1
+}
+
+header.color .headlist,
+header.color .headlist:hover {
+    background: hsla(0, 0%, 100%, .9);
+    border: 1px solid
+}
+
+header.color .headlist .list .name,
+header.color .headlist .list .name a,
+header.color .headlist .list .name a:hover {
+    color: #000
+}
+
+header.color .headlist .list .name .line {
+    background: #000
+}
+
+header.color .headlist .list .secbox .seclist .cc {
+    border: 1px solid #000
+}
+
+header,
+header.active {
+    z-index: 21
+}
+
+header {
+    position: fixed;
+    transition: z-index .5s;
+    -moz-transition: z-index .5s;
+    -webkit-transition: z-index .5s;
+    -o-transition: z-index .5s;
+    top: 0
+}
+
+header .celmenu {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 20;
+    display: none;
+    cursor: pointer
+}
+
+header .celmenu .hov,
+header .celmenu .nor {
+    position: absolute;
+    transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s
+}
+
+header .celmenu .nor {
+    opacity: 1
+}
+
+header .celmenu .nor.color {
+    display: block
+}
+
+header .celmenu .nor.nocolor {
+    display: none
+}
+
+header .celmenu.active .nor,
+header .celmenu .hov {
+    opacity: 0
+}
+
+header .celmenu.active .hov {
+    opacity: 1
+}
+
+header .celmenu.color .nor.color {
+    display: none
+}
+
+header .celmenu.color .nor.nocolor {
+    display: block
+}
+
+header .logo {
+    position: fixed;
+    width: 150px;
+    /*height: px;*/
+    top: 2.5rem;
+    left: 3.5rem;
+}
+
+header .logo img {
+    height: 100%
+}
+
+header .menu {
+    position: fixed;
+    width: 35px;
+    height: 120px;
+    top: 50px;
+    right: 50px;
+    cursor: pointer
+}
+
+header .menu .downpic {
+    position: relative
+}
+
+header .menu .downpic .bb,
+header .menu .downpic .ww {
+    position: absolute
+}
+
+header .menu .downpic .ww {
+    opacity: 1
+}
+
+header .menu .downpic .bb {
+    opacity: 0
+}
+
+header .menu .box {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0 15px;
+    border-radius: 0 0 50px 50px
+}
+
+header .menu .box .menuicon {
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    transition: margin .5s;
+    -moz-transition: margin .5s;
+    -webkit-transition: margin .5s;
+    -o-transition: margin .5s;
+    font-size: 14px;
+    color: #fff;
+    font-family: Avenir Next;
+    font-weight: 600;
+}
+
+header .menu:hover .box .menuicon {
+    margin: 0 auto 20px;
+}
+
+header .menu:hover .box .menuicon:last-child {
+    margin: 0 auto 5px;
+}
+
+header .headlist {
+    position: fixed;
+    top: 3.5rem;
+    right: 6.5rem;
+    padding: 0.8rem 0;
+    background: rgba(26, 26, 26, .5);
+}
+
+header .headlist:hover {
+    background: rgba(26, 26, 26, .9);
+}
+
+header .headlist a,
+header .headlist a:hover {
+    text-decoration: none
+}
+
+header .headlist .list {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    padding: 0;
+    max-width: 190px;
+}
+
+header .headlist .list .name {
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    padding: 0 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+header .headlist .list .name,
+header .headlist .list .name .tt {
+    font-weight: 700;
+    font-family: Avenir, Arial
+}
+
+header .headlist .list .name a,
+header .headlist .list .name a:hover {
+    text-decoration: none;
+    color: #fff
+}
+
+header .headlist .list .name .line {
+    opacity: 0;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s
+}
+
+header .headlist .list .secbox {
+    margin: 0;
+    padding: 0 0 0 5px;
+    height: 1px;
+    /*overflow: hidden;*/
+    width: 1px;
+    opacity: 0;
+    transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s
+}
+
+header .headlist .list .secbox .seclist {
+    margin: 0 0 10px;
+    position: relative;
+    width: fit-content;
+}
+
+header .headlist .list .secbox .seclist .cc,
+header .headlist .list .secbox .seclist .name {
+    display: inline-block;
+    vertical-align: top;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+header .headlist .list .secbox .seclist .cc {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 4px 0 0;
+    position: absolute
+}
+
+header .headlist .list .secbox .seclist .name {
+    padding: 0 0 0 15px;
+    width: calc(100% - 25px);
+    font-weight: 200;
+    font-family: Avenir, Ariale;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+header.color .headlist .list .secbox .seclist.active .name,
+header.color .headlist .list .secbox .seclist:hover .name {
+    color: #003B87
+}
+
+header.color .headlist .list .secbox .seclist.active .cc,
+header.color .headlist .list .secbox .seclist:hover .cc {
+    background: #003B87;
+    border: 1px solid #003B87
+}
+
+header.color .headlist .list.active .tt,
+header.color .headlist .list:hover .tt {
+    color: #003B87
+}
+
+
+header .headlist .list .secbox .seclist.active .name,
+header .headlist .list .secbox .seclist:hover .name {
+    color: #7CCAD1
+}
+
+header .headlist .list .secbox .seclist.active .cc,
+header .headlist .list .secbox .seclist:hover .cc {
+    background: #7CCAD1;
+    border: 1px solid #7CCAD1
+}
+
+header .headlist .list.active .tt,
+header .headlist .list:hover .tt {
+    color: #7CCAD1
+}
+
+header .headlist .list:hover .secbox {
+    margin: 20px 0 0;
+    height: 100%;
+    opacity: 1
+}
+
+header .openmenubox {
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    -o-transition: opacity .3s
+}
+
+header .openmenubox .menubg {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 60px;
+    height: 355px;
+    z-index: 9;
+    transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transition: -webkit-transform .4s cubic-bezier(.77, 0, .175, 1) .4s;
+    transition: transform .4s cubic-bezier(.77, 0, .175, 1) .4s;
+    transition: transform .4s cubic-bezier(.77, 0, .175, 1) .4s, -webkit-transform .4s cubic-bezier(.77, 0, .175, 1) .4s;
+    -moz-transition: transform .4s cubic-bezier(.77, 0, .175, 1) .4s;
+    -webkit-transition: transform .4s cubic-bezier(.77, 0, .175, 1) .4s;
+    -o-transition: transform .4s cubic-bezier(.77, 0, .175, 1) .4s
+}
+
+header .openmenubox .close {
+    position: fixed;
+    width: 35px;
+    height: 135px;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 10;
+    transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    transition: all .5s cubic-bezier(.77, 0, .175, 1) .4s;
+    -moz-transition: all .5s cubic-bezier(.77, 0, .175, 1) .4s;
+    -webkit-transition: all .5s cubic-bezier(.77, 0, .175, 1) .4s;
+    -o-transition: all .5s cubic-bezier(.77, 0, .175, 1) .4s
+}
+
+header .openmenubox .close .box {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 10px 0 15px;
+    border-radius: 0 0 50px 50px
+}
+
+header .openmenubox .close .box .menuicon {
+    font-size: 14px;
+    color: #fff;
+    font-family: Avenir Next;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 15px;
+    height: 15px;
+    transition: margin .5s;
+    -moz-transition: margin .5s;
+    -webkit-transition: margin .5s;
+    -o-transition: margin .5s
+}
+
+header .openmenubox .close:hover .box .menuicon {
+    margin: 0 auto 20px
+}
+
+header .openmenubox .close:hover .box .menuicon:last-child {
+    margin: 0 auto 5px
+}
+
+header .openmenubox .leftbox,
+header .openmenubox .rightbox {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    transition: all .6s cubic-bezier(.77, 0, .175, 1) .3s;
+    -moz-transition: all .6s cubic-bezier(.77, 0, .175, 1) .3s;
+    -webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1) .3s;
+    -o-transition: all .6s cubic-bezier(.77, 0, .175, 1) .3s
+}
+
+header .openmenubox .leftbox .btnfoot,
+header .openmenubox .rightbox .btnfoot {
+    position: absolute;
+    left: 0;
+    right: 100px;
+    margin: auto;
+    bottom: 10%;
+    width: 250px
+}
+
+header .openmenubox .leftbox .btnfoot .file,
+header .openmenubox .rightbox .btnfoot .file {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px
+}
+
+header .openmenubox .leftbox .btnfoot .file .hov,
+header .openmenubox .leftbox .btnfoot .file .nor,
+header .openmenubox .rightbox .btnfoot .file .hov,
+header .openmenubox .rightbox .btnfoot .file .nor {
+    position: absolute
+}
+
+header .openmenubox .leftbox .btnfoot .file .hov,
+header .openmenubox .rightbox .btnfoot .file .hov {
+    opacity: 0
+}
+
+header .openmenubox .leftbox .btnfoot .file .nor,
+header .openmenubox .leftbox .btnfoot .file:hover .hov,
+header .openmenubox .rightbox .btnfoot .file .nor,
+header .openmenubox .rightbox .btnfoot .file:hover .hov {
+    opacity: 1
+}
+
+header .openmenubox .leftbox .btnfoot .file:hover .nor,
+header .openmenubox .rightbox .btnfoot .file:hover .nor {
+    opacity: 0
+}
+
+header .openmenubox .leftbox .btnfoot .file,
+header .openmenubox .rightbox .btnfoot .file {
+    width: 50px;
+    height: 65px
+}
+
+header .openmenubox .leftbox .bg,
+header .openmenubox .leftbox .contbox,
+header .openmenubox .rightbox .bg,
+header .openmenubox .rightbox .contbox {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%
+}
+
+header .openmenubox .leftbox {
+    left: 0;
+    width: calc(40% + 50px);
+    position: relative;
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%)
+}
+
+header .openmenubox .leftbox .contbox {
+    background: #fff;
+    width: calc(100% - 49px)
+}
+
+header .openmenubox .leftbox .contbox .leftlogo {
+    width: 70%;
+    max-width: 385px;
+    height: 85px;
+    margin: auto;
+    position: relative;
+    top: 35%
+}
+
+header .openmenubox .leftbox .bg {
+    position: absolute;
+    width: 50px;
+    right: 0;
+    background: url(/images/iot/menuright.svg) 100% 100% no-repeat;
+    background-size: cover
+}
+
+header .openmenubox .rightbox {
+    right: 0;
+    width: calc(60% + 51px);
+    transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -webkit-transform: translateX(100%)
+}
+
+header .openmenubox .rightbox .celbg {
+    display: none;
+    height: 100px;
+    position: relative
+}
+
+header .openmenubox .rightbox .celbg img {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+header .openmenubox .rightbox .btnfoot {
+    right: 0;
+    position: relative;
+    display: none;
+    padding: 50px 0;
+    height: 50px
+}
+
+header .openmenubox .rightbox .btnfoot .btnlogo {
+    width: 150px;
+    height: 35px;
+    position: relative;
+    left: 10px
+}
+
+header .openmenubox .rightbox .btnfoot .file {
+    position: absolute;
+    top: 50px;
+    margin: 0
+}
+
+header .openmenubox .rightbox .btnfoot .file {
+    width: 30px;
+    height: 40px;
+    right: 85px
+}
+
+header .openmenubox .rightbox .contbox {
+    width: calc(100% - 124px);
+    background: #333;
+    margin: 0 0 0 124px;
+    padding: 100px 0 50px;
+    overflow: auto
+}
+
+header .openmenubox .rightbox .contbox .menubox {
+    padding: 0;
+    height: 100%;
+    margin: 0 150px 0 0;
+    text-align: center
+}
+
+header .openmenubox .rightbox .contbox .scrollbox {
+    height: 100%
+}
+
+header .openmenubox .rightbox .contbox .box {
+    padding: 0 0 50px
+}
+
+header .openmenubox .rightbox .contbox .list {
+    font-size: 48px;
+    margin: 30px auto
+}
+
+header .openmenubox .rightbox .contbox .list a,
+header .openmenubox .rightbox .contbox .list a:hover {
+    text-decoration: none
+}
+
+header .openmenubox .rightbox .contbox .list .name {
+    color: #003B87;
+    transition: color .5s;
+    -moz-transition: color .5s;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    font-family: Avenir Next;
+    font-weight: 700
+}
+
+header .openmenubox .rightbox .contbox .list.active .name,
+header .openmenubox .rightbox .contbox .list:hover .name {
+    color: #fff
+}
+
+header .openmenubox .rightbox .bg {
+    position: absolute
+}
+
+header .openmenubox .rightbox .bg1 {
+    width: 75px;
+    left: 50px;
+    background: url(/images/iot/menuleft.svg) 0 100% repeat-y
+}
+
+header .openmenubox .rightbox .bg2 {
+    width: 50px;
+    left: 1px;
+    background: url(/images/iot/menuleft2.svg) 0 100% no-repeat
+}
+
+header .openmenubox.active {
+    z-index: 30;
+    opacity: 1;
+    width: 100%
+}
+
+header .openmenubox.active .leftbox,
+header .openmenubox.active .rightbox {
+    transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0)
+}
+
+header .openmenubox.active .close,
+header .openmenubox.active .menubg {
+    transform: translateY 0;
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0)
+}
+
+@media (max-width:1200px) {
+    header .openmenubox .rightbox .contbox .menubox {
+        margin: 0 120px 0 0
+    }
+
+    header .openmenubox .rightbox .contbox .list {
+        font-size: 30px
+    }
+}
+
+@media (max-width:992px) {
+
+    header .headlist .list {
+        margin: 0 0 0 20px
+    }
+
+    header .openmenubox .leftbox .btn {
+        width: 150px
+    }
+
+    header .openmenubox .leftbox .btn .file {
+        margin: 15px
+    }
+
+    header .openmenubox .leftbox .btn .file {
+        width: 35px;
+        height: 46px
+    }
+
+    header .openmenubox .leftbox {
+        width: calc(35% + 50px)
+    }
+
+    header .openmenubox .leftbox .contbox .leftlogo {
+        width: 80%
+    }
+
+    header .openmenubox .rightbox {
+        width: calc(65% + 51px)
+    }
+}
+
+@media (max-width:768px) {
+    header.color .menu .box {
+        border: 1px solid #000
+    }
+
+    header.color .menu .box .menuicon {
+        color: #000
+    }
+
+    header.color .menu .downpic .ww {
+        opacity: 0
+    }
+
+    header.color .menu .downpic .bb {
+        opacity: 1
+    }
+
+    header.color .headlist {
+        background: rgba(0, 0, 0, .9)
+    }
+
+    header.color .headlist .list .name,
+    header.color .headlist .list .name a,
+    header.color .headlist .list .name a:hover {
+        color: #fff
+    }
+
+    header.color .headlist .list .name .line {
+        background: #fff
+    }
+
+    header.color .headlist .list .secbox .seclist .cc {
+        border: 1px solid #fff
+    }
+
+    header.color .headlist .list.active .secbox,
+    header.color .headlist .list:hover .secbox {
+        margin: 10px 0 0
+    }
+
+    header.color .headlist:hover {
+        background: rgba(0, 0, 0, .9)
+    }
+
+    header .celmenu {
+        display: block
+    }
+
+
+    header .logo.active {
+        display: none
+    }
+
+    header .menu {
+        top: 20px;
+        right: 20px
+    }
+
+    header .headlist {
+        height: 100vh;
+        overflow: auto;
+        top: 0;
+        right: 0;
+        padding: 70px 0 20px;
+        width: 100%;
+        background: rgba(0, 0, 0, .9);
+        transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+        -webkit-transform: translateY(-100%);
+        transition: all .5s .5s;
+        -moz-transition: all .5s .5s;
+        -webkit-transition: all .5s .5s;
+        -o-transition: all .5s .5s
+    }
+
+    header .headlist .list {
+        display: block;
+        max-width: 100%
+    }
+
+    header .headlist .list a,
+    header .headlist .list a:hover {
+        color: #fff
+    }
+
+    header .headlist .list .secbox {
+        height: 100%;
+        opacity: 1;
+        margin: 10px 0 0
+    }
+
+    header .headlist .list.active .secbox,
+    header .headlist .list:hover .secbox {
+        margin: 10px 0 0
+    }
+
+    header .headlist.active {
+        transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0)
+    }
+
+    header .openmenubox .menubg {
+        width: 35px;
+        height: 205px;
+        right: 20px;
+        display: none
+    }
+
+    header .openmenubox .close {
+        top: 20px;
+        right: 20px
+    }
+
+    header .openmenubox .leftbox {
+        width: 100px;
+        display: none
+    }
+
+    header .openmenubox .leftbox .btn,
+    header .openmenubox .leftbox .leftlogo {
+        display: none
+    }
+
+    header .openmenubox .rightbox {
+        width: 100%
+    }
+
+    header .openmenubox .rightbox .celbg {
+        display: block
+    }
+
+    header .openmenubox .rightbox .bg {
+        display: none
+    }
+
+    header .openmenubox .rightbox .contbox {
+        margin: 0;
+        width: 100%;
+        padding: 20px 0 0
+    }
+
+    header .openmenubox .rightbox .contbox .box {
+        padding: 0
+    }
+
+    header .openmenubox .rightbox .contbox .listbox {
+        min-height: calc(100vh - 310px)
+    }
+
+    header .openmenubox .rightbox .contbox .list {
+        font-size: 20px;
+        margin: 20px auto;
+        font-weight: 400;
+        font-size: 18px
+    }
+
+    header .openmenubox .rightbox .contbox .menubox {
+        padding: 0;
+        height: calc(100% - 20px);
+        margin: 0
+    }
+
+    header .openmenubox .rightbox .btnfoot {
+        display: block;
+        background: #fff;
+        width: 100%
+    }
+}
+
+
+
+@media (max-width:550px) {
+
+    header .celmenu {
+        width: 2rem;
+        height: 3rem;
+        top: 1rem;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .logo {
+        width: auto;
+        height: 3rem;
+        top: 1rem;
+        left: 4.5rem;
+    }
+}

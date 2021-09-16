@@ -1,0 +1,153 @@
+#mainsection .box {
+    margin: 0 0 0 0;
+    width: 100vw;
+}
+
+#mainsection .box * .text {
+    font-family: 'Public Sans';
+    text-align: left;
+}
+
+#mainsection .box * .text .head {
+    color: #003b87;
+    font-size:  2.5rem;
+    font-weight: 700;
+    margin-top: 6.5rem;
+    height: 2.5rem;
+}
+
+#mainsection .box * .text .list {
+    color: #000000;
+    font-size:  1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+#mainsection .box * .text .list li::before {
+    content: "♦";
+    /* Insert content that looks like bullets */
+    position: absolute;
+    left: 0;
+    /*    color: blue; /* Or a color you prefer */
+}
+
+#mainsection .box .part1 {
+    margin-top: 5rem;
+    height: 25rem;
+    background: linear-gradient(75deg, rgba(145, 215, 225, 1)20%, rgba(222, 242, 242, 1)80%);
+    background: -moz-linear-gradient(75deg, rgba(145, 215, 225, 1)20%, rgba(222, 242, 242, 1)80%);
+    background: -webkit-linear-gradient(75deg, rgba(145, 215, 225, 1)20%, rgba(222, 242, 242, 1)80%);
+    background: -o-linear-gradient(75deg, rgba(145, 215, 225, 1)20%, rgba(222, 242, 242, 1)80%);
+    border-top-right-radius: 5.5rem;
+    width: 90vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainsection .box .part1 .pic {
+    margin-top: 2.5rem;
+    margin-left: 10vw;
+    height: 20rem;
+    width: 40vw;
+    background-image: url(/assets/images/custom-service-1-0712.png);
+    background-size: auto 20rem;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#mainsection .box .part1 .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainsection .box .part2 {
+    margin-top: 10rem;
+    height: 25rem;
+    background: linear-gradient(75deg, rgba(170, 180, 190, 1)20%, rgba(230, 230, 230, 1)80%);
+    background: -moz-linear-gradient(75deg, rgba(170, 180, 190, 1)20%, rgba(230, 230, 230, 1)80%);
+    background: -webkit-linear-gradient(75deg, rgba(170, 180, 190, 1)20%, rgba(230, 230, 230, 1)80%);
+    background: -o-linear-gradient(75deg, rgba(170, 180, 190, 1)20%, rgba(230, 230, 230, 1)80%);
+    border-top-left-radius: 5.5rem;
+    width: 90vw;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainsection .box .part2 .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainsection .box .part2 .pic {
+    margin-top: 0;
+    margin-left: 0;
+    height: 25rem;
+    width: 40vw;
+    background-image: url(/assets/images/custom-service-2-0712.png);
+    background-size: auto 25rem;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#mainsection .box .part3 {
+    margin-top: 10rem;
+    height: 25rem;
+    background: linear-gradient(105deg, rgba(35, 105, 175, 1)20%, rgba(185, 205, 225, 1)80%);
+    background: -moz-linear-gradient(105deg, rgba(35, 105, 175, 1)20%, rgba(185, 205, 225, 1)80%);
+    background: -webkit-linear-gradient(105deg, rgba(35, 105, 175, 1)20%, rgba(185, 205, 225, 1)80%);
+    background: -o-linear-gradient(105deg, rgba(35, 105, 175, 1)20%, rgba(185, 205, 225, 1)80%);
+    border-top-right-radius: 5.5rem;
+    width: 90vw;
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#mainsection .box .part3 .pic {
+    margin-top: 2.5rem;
+    margin-left: 15vw;
+    height: 20rem;
+    width: 35vw;
+    background-image: url(/assets/images/custom-service-3-0712.png);
+    background-size: auto 20rem;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#mainsection .box .part3 .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#mainsection .box .part3 .text .list {
+    color: #FFFFFF;
+}
+
+#mainsection .box .part4 {
+    margin-top: 10rem;
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 10rem;
+}
+
+#mainsection .box .part4 a,
+#mainsection .box .part4 a:hover {
+    text-decoration: none;
+    color: #003B87;
+    font-weight: 700;
+    font-style: italic;
+}

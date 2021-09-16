@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="圖文">
+    <g>
+      <path class="cls-1" d="M4.5,8.18V27.82h27V8.18Zm22.1,2.87L18,17.23,9.4,11.05Zm2.85,14.72H6.55V12.52L18,20.76l11.45-8.24Z"/>
+      <rect class="cls-2" width="36" height="36"/>
+    </g>
+  </g>
+</svg>

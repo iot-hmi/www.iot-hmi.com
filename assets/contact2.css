@@ -1,0 +1,18 @@
+.processed {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 3px
+}
+
+label.error {
+    text-align: right !important;
+    width: 80% !important;
+    display: inline !important;
+}
+
+label.error {
+    color: red !important;
+    font-style: italic !important;
+}

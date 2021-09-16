@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 42 42"
+   version="1.1"
+   id="svg18"
+   sodipodi:docname="btn_down.svg"
+   inkscape:version="1.0.2 (e86c870, 2021-01-15)">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1013"
+     id="namedview20"
+     showgrid="false"
+     inkscape:zoom="10.059524"
+     inkscape:cx="55.749587"
+     inkscape:cy="14.369231"
+     inkscape:window-x="3831"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg18" />
+  <defs
+     id="defs7">
+    <style
+       id="style2">.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
+    <clipPath
+       id="clip-path">
+      <rect
+         class="cls-1"
+         x="27.12"
+         y="75"
+         width="84"
+         height="35"
+         id="rect4" />
+    </clipPath>
+  </defs>
+  <g
+     id="g903">
+    <g
+       class="cls-2"
+       clip-path="url(#clip-path)"
+       id="g11">
+      <image
+         xlink:href="../../../../../Users/lian.chang/Desktop/DATA/1200x630wa.png"
+         id="image9"
+         transform="matrix(0.21,0,0,0.21,-56.67,26.46)"
+         height="630"
+         width="1200" />
+    </g>
+    <path
+       d="M 21,0 A 21,21 0 1 0 42,21 21,21 0 0 0 21,0 Z m 0,40 A 19,19 0 1 1 40,21 19,19 0 0 1 21,40 Z"
+       id="path13" />
+    <path
+       d="m 20.695839,36.14541 a 0.37,0.37 0 0 1 -0.14,0 1,1 0 0 1 -0.32,-0.21 l -7.09,-7.14 a 1,1 0 0 1 0,-1.41 1,1 0 0 1 1.41,0 l 5.39,5.39 V 6.7754101 a 1,1 0 1 1 2,0 V 32.77541 l 5.39,-5.39 a 1,1 0 1 1 1.41,1.41 l -7.09,7.1 a 1,1 0 0 1 -0.32,0.21 0.37,0.37 0 0 1 -0.14,0 0.85,0.85 0 0 1 -0.5,0.04 z"
+       id="path15" />
+  </g>
+</svg>

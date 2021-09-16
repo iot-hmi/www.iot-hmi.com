@@ -1,0 +1,206 @@
+#listpage {
+    padding: 11rem 0 0;
+    position: relative;
+}
+
+
+
+#listpage .box {
+    margin-left:  15%;
+    margin-right: 15%;
+    width: 70%;
+    margin-top: calc(10rem / 3);
+    /*height: calc(115rem / 3);*/
+}
+
+#listpage .box .downlist {
+    margin: 0 0 30px;
+    position: relative;
+    opacity: 0;
+    top: 100px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#listpage .box .downlist a,
+#listpage .box .downlist a:hover {
+    text-decoration: none
+}
+
+#listpage .box .downlist .bg {
+    height: 100%;
+    width: calc(100% - 15px);
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    position: absolute
+}
+
+#listpage .box .downlist .bg .line {
+    position: absolute;
+    width: 145px;
+    top: 0;
+    left: 0;
+    height: 1px;
+    background: #000;
+    z-index: 1
+}
+
+#listpage .box .downlist .bg .sss {
+    left: 140px;
+    top: -5px;
+    z-index: 2
+}
+
+#listpage .box .downlist .bg .bb {
+    width: 0;
+    height: 100%;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    background: #b1b7bb;
+    position: absolute
+}
+
+#listpage .box .downlist .date,
+#listpage .box .downlist .title {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 0;
+    position: relative;
+    font-size: 18px;
+    color: #3e3a39;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+#listpage .box .downlist .sss {
+    position: absolute;
+    width: 11px;
+    height: 11px
+}
+
+#listpage .box .downlist .date {
+    width: 144px;
+    text-align: center
+}
+
+#listpage .box .downlist .title {
+    width: calc(100% - 180px);
+    padding: 14px 0 14px 20px;
+    margin: 0 20px 0 0
+}
+
+#listpage .box .downlist .title .sss {
+    right: -25px;
+    bottom: -5px
+}
+
+#listpage .box .downlist:hover .bg .bb {
+    width: 100%
+}
+
+#listpage .box .downlist:hover .date,
+#listpage .box .downlist:hover .title {
+    color: #fff
+}
+
+
+#listpage .box .downlist.startopen {
+    opacity: 1;
+    top: 0
+}
+
+#listpage .box .downlist.downtt .date {
+    background: #003B87;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 12px 0;
+    letter-spacing: 2px
+}
+
+#listpage .box .downlist.downtt .title {
+    background: #3e3a39;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 15px;
+    padding: 12px 0;
+    border: none;
+    letter-spacing: 2px
+}
+
+.product_list_title { 
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:1100px) {
+    .product_list_title { 
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .product_list_title { 
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }    
+}
+
+@media (max-width:550px) {
+    .product_list_title { 
+        font-weight: 700;
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #listpage {
+        padding: 150px 0 0;
+    }
+
+    #listpage .box {
+        margin: 0 20px 0 20px;
+        width: calc(100% - 40px);
+    }
+
+    #listpage .box .downlist .bg {
+        width: 100%;
+    }
+
+    #listpage .box .downlist.downtt {
+        display: none
+    }
+
+    #listpage .box .downlist .date,
+    #listpage .box .downlist .title {
+        width: calc(100% - 35px);
+        display: block;
+        margin: 0;
+        text-align: left;
+        font-size: 14px;
+        padding: 5px 45px 5px 5px;
+    }
+
+    #listpage .box .downlist .title .sss {
+        display: none;
+    }
+    
+}

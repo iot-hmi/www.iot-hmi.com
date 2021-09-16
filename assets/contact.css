@@ -1,0 +1,583 @@
+.formbox {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.formbox button {
+    margin: 0 auto;
+    display: block
+}
+
+.formbox .sendBtn,
+.formbox button {
+    background: none;
+    border: none;
+    width: 355px;
+    height: 80px
+}
+
+.formbox .sendBtn {
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden
+}
+
+.formbox .sendBtn .ll {
+    position: absolute;
+    width: 355px;
+    height: 80px;
+    top: 15px;
+    left: -275px;
+    transition: left .5s;
+    -moz-transition: left .5s;
+    -webkit-transition: left .5s;
+    -o-transition: left .5s
+}
+
+.formbox .sendBtn .pic {
+    color: #c2c3c3;
+    font-size: 59px;
+    font-family: Avenir Next;
+    font-weight: 700;
+    letter-spacing: 5px;
+    transition: color .5s;
+    -moz-transition: color .5s;
+    -webkit-transition: color .5s;
+    -o-transition: color .5s;
+    text-align: center
+}
+
+.formbox .sendBtn:hover .ll {
+    left: 0
+}
+
+.formbox .sendBtn:hover .pic {
+    color: #7CCAD1;
+    opacity: .5;
+}
+
+.formbox .contactlist .inputlist {
+    position: relative;
+    padding: 20px 25px
+}
+
+.formbox .contactlist .inputlist .line {
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    width: 50px;
+    height: 5px;
+    background: #7CCAD1
+}
+
+.formbox .contactlist .inputlist.active .line {
+    width: 100%
+}
+
+.formbox .contactlist .inputlist label {
+    position: absolute;
+    left: 45px;
+    top: 40px;
+    color: #949595;
+    font-size: 18px;
+    letter-spacing: 2px;
+    opacity: 1;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    z-index: 1
+}
+
+.formbox .contactlist .inputlist label span {
+    font-size: 16px
+}
+
+.formbox .contactlist .inputlist input,
+.formbox .contactlist .inputlist textarea {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    width: calc(100% - 50px);
+    color: #414042;
+    font-size: 20px;
+    outline: none;
+    padding: 20px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s
+}
+
+.formbox .contactlist .inputlist textarea {
+    margin: 0 0 -5px;
+    padding: 30px 20px;
+    height: 400px;
+    border: 1px solid #c2c3c3;
+    border-bottom: none;
+    min-height: 400px;
+    max-height: 400px;
+    width: 100%
+}
+
+.formbox .contactlist .inputlist input.hasValue+label,
+.formbox .contactlist .inputlist input:focus+label,
+.formbox .contactlist .inputlist textarea.hasValue+label,
+.formbox .contactlist .inputlist textarea:focus+label {
+    opacity: 0
+}
+
+.formbox .contactlist .inputlist.secline {
+    padding: 90px 25px 0
+}
+
+.formbox .contactlist .inputlist.secline label {
+    top: 120px
+}
+
+#contactpage .upbox {
+    position: relative;
+    padding: 200px 0 0
+}
+
+#contactpage .upbox .bg {
+    position: absolute;
+    background: #1a1a1a;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: -1
+}
+
+#contactpage .upbox .picbox,
+#contactpage .upbox .textbox {
+    display: inline-block;
+    vertical-align: top
+}
+
+#contactpage .upbox .picbox {
+    position: relative;
+    position: absolute;
+    left: 0;
+    top: 225px;
+    z-index: 2;
+    width: 50%
+}
+
+#contactpage .upbox .picbox .bb {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1a;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: width .5s;
+    -moz-transition: width .5s;
+    -webkit-transition: width .5s;
+    -o-transition: width .5s
+}
+
+#contactpage .upbox .picbox.active .bb {
+    width: 0
+}
+
+#contactpage .upbox .picbox.celpic {
+    display: none
+}
+
+#contactpage .upbox .textbox {
+    margin-left: calc(50% + 150px);
+    width: calc(50% - 150px);
+    position: relative;
+    z-index: 1
+}
+
+#contactpage .upbox .textbox .title {
+    margin: 0 0 80px
+}
+
+#contactpage .upbox .textbox .title .tt {
+    font-size: 59px;
+    color: #fff;
+    font-weight: 700;
+    font-family: Avenir Next;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    position: relative
+}
+
+#contactpage .upbox .textbox .title .line {
+    max-width: 720px;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: -150px
+}
+
+#contactpage .upbox .textbox .title .line .line1,
+#contactpage .upbox .textbox .title .line .line2 {
+    position: absolute;
+    height: 60px
+}
+
+#contactpage .upbox .textbox .title .line .line1 {
+    width: 125px;
+    left: 0;
+    background: url(/images/iot/contactline1.svg) 100% 0 no-repeat
+}
+
+#contactpage .upbox .textbox .title .line .line2 {
+    left: 125px;
+    width: 50px;
+    background: url(/images/iot/contactline2.svg) 100% 0 no-repeat;
+    transition: width .5s .5s;
+    -moz-transition: width .5s .5s;
+    -webkit-transition: width .5s .5s;
+    -o-transition: width .5s .5s
+}
+
+#contactpage .upbox .textbox .title .line.active .line2 {
+    width: calc(100% - 125px)
+}
+
+#contactpage .upbox .textbox .infobox .titlepic {
+    width: 95%;
+    margin: 0 0 50px
+}
+
+#contactpage .upbox .textbox .infobox .box {
+    margin: 0 0 50px;
+    position: relative;
+    opacity: 0;
+    top: 100px;
+    transition: all .5s 1s;
+    -moz-transition: all .5s 1s;
+    -webkit-transition: all .5s 1s;
+    -o-transition: all .5s 1s
+}
+
+#contactpage .upbox .textbox .infobox .box .pic,
+#contactpage .upbox .textbox .infobox .box .text {
+    display: inline-block;
+    vertical-align: top
+}
+
+#contactpage .upbox .textbox .infobox .box .pic {
+    width: 55px
+}
+
+#contactpage .upbox .textbox .infobox .box .text {
+    width: calc(100% - 70px);
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    color: #fff
+}
+
+#contactpage .upbox .textbox .infobox .box .text a,
+#contactpage .upbox .textbox .infobox .box .text a:hover {
+    color: #fff;
+    text-decoration: none
+}
+
+#contactpage .upbox .textbox .infobox .box .text a:hover {
+    color: #7CCAD1
+}
+
+#contactpage .upbox .textbox .infobox .box.middle .pic,
+#contactpage .upbox .textbox .infobox .box.middle .text {
+    vertical-align: middle
+}
+
+#contactpage .upbox .textbox .infobox.active .box {
+    top: 0;
+    opacity: 1
+}
+
+#contactpage .upbox .mapbox {
+    position: relative;
+    left: calc(-10%);
+    width: calc(100%);
+    transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s
+}
+
+#contactpage .upbox .mapbox .maphere {
+    height: 410px;
+    width: calc(100%)
+}
+
+#contactpage .upbox .mapbox .gotomap {
+    margin: 50px 0;
+    position: relative;
+    width: calc(100%);
+    height: 30px
+}
+
+#contactpage .upbox .mapbox .gotomap .url {
+    color: #3e3a39;
+    font-size: 18px;
+    width: 150px;
+    right: 0;
+    position: absolute;
+    padding: 0 20px;
+    text-align: right
+}
+
+#contactpage .upbox .mapbox .gotomap .url a,
+#contactpage .upbox .mapbox .gotomap .url a:hover {
+    color: #3e3a39;
+    text-decoration: none
+}
+
+#contactpage .upbox .mapbox .gotomap .url .line {
+    position: absolute;
+    height: 25px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    z-index: -1
+}
+
+#contactpage .upbox .mapbox .gotomap .url .line .ll,
+#contactpage .upbox .mapbox .gotomap .url .line .pp {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#contactpage .upbox .mapbox .gotomap .url .line .pp {
+    width: 10px
+}
+
+#contactpage .upbox .mapbox .gotomap .url .line .ll {
+    width: calc(100% - 12px);
+    height: 1px;
+    margin: 0 -5px 0 0;
+    background: #000
+}
+
+#contactpage .upbox .mapbox .gotomap .url:hover .line {
+    width: 100%
+}
+
+@media (max-width:1400px) {
+
+    #contactpage .upbox .mapbox .gotomap,
+    #contactpage .upbox .mapbox .maphere {
+        width: calc(100%)
+    }
+
+    #contactpage .upbox .textbox {
+        margin-left: calc(50% + 100px);
+        width: calc(50% - 100px)
+    }
+
+    #contactpage .upbox .textbox .title {
+        margin: 0 0 100px
+    }
+
+    #contactpage .upbox .textbox .title .line {
+        left: -100px
+    }
+
+    #contactpage .upbox .textbox .title .tt {
+        font-size: 56px
+    }
+
+    #contactpage .upbox .textbox .infobox .box {
+        margin: 0 0 20px
+    }
+}
+
+@media (max-width:1250px) {
+    #contactpage .upbox .textbox {
+        width: calc(50% - 50px);
+        margin-left: calc(50% + 50px)
+    }
+
+    #contactpage .upbox .textbox .title .tt {
+        font-size: 50px
+    }
+
+    #contactpage .upbox .textbox .title .line {
+        left: -50px
+    }
+}
+
+@media (max-width:992px) {
+    #contactpage .upbox .bg {
+        height: calc(100% - 700px)
+    }
+
+    #contactpage .upbox .mapbox {
+        left: -125px;
+        margin: 125px 0 0;
+        width: calc(100%)
+    }
+
+    #contactpage .upbox .mapbox .maphere {
+        width: 100%;
+        height: 600px
+    }
+
+    #contactpage .upbox .mapbox .gotomap {
+        margin: 20px 0;
+        width: 100%
+    }
+
+    #contactpage .upbox .picbox {
+        display: none
+    }
+
+    #contactpage .upbox .picbox.celpic {
+        position: relative;
+        display: block;
+        width: 90%;
+        top: 0;
+        left: -150px
+    }
+
+    #contactpage .upbox .textbox {
+        width: calc(100% - 150px);
+        margin-left: 150px
+    }
+
+    #contactpage .upbox .textbox .title {
+        margin: 0 0 70px
+    }
+
+    #contactpage .upbox .textbox .title .line {
+        left: -150px
+    }
+}
+
+@media (max-width:768px) {
+    .formbox button {
+        width: 255px;
+        height: 50px
+    }
+
+    .formbox .sendBtn {
+        width: 255px
+    }
+
+    .formbox .sendBtn .ll {
+        width: 255px;
+        top: 20px;
+        left: -190px;
+        height: 50px
+    }
+
+    .formbox .contactlist .inputlist.secline {
+        padding: 50px 25px 0
+    }
+
+    .formbox .contactlist .inputlist.secline label {
+        top: 80px
+    }
+
+    .formbox .contactlist .inputlist textarea {
+        min-height: 400px;
+        max-height: 400px;
+        height: 400px
+    }
+
+    #contactpage .sendBtn .pic {
+        font-size: 34px
+    }
+
+    #contactpage .upbox {
+        padding: 150px 0 0
+    }
+
+    #contactpage .upbox .bg {
+        height: calc(100% - 500px)
+    }
+
+    #contactpage .upbox .mapbox,
+    #contactpage .upbox .picbox.celpic {
+        left: -20px;
+        width: calc(100% + 40px)
+    }
+
+    #contactpage .upbox .mapbox {
+        top: 0;
+        margin: 0 auto
+    }
+
+    #contactpage .upbox .mapbox .maphere {
+        height: 400px
+    }
+
+    #contactpage .upbox .textbox {
+        width: 100%;
+        padding: 0 20px;
+        margin-left: 0
+    }
+
+    #contactpage .upbox .textbox .infobox {
+        padding: 0 0 0 50px
+    }
+
+    #contactpage .upbox .textbox .infobox .titlepic {
+        width: 100%;
+        margin: 0 0 30px
+    }
+
+    #contactpage .upbox .textbox .infobox .box .pic {
+        width: 30px;
+        padding: 10px 0 0
+    }
+
+    #contactpage .upbox .textbox .infobox .box .text {
+        font-size: 16px;
+        padding: 0 0 0 10px
+    }
+
+    #contactpage .upbox .textbox .infobox .box.middle .pic {
+        padding: 0
+    }
+
+    #contactpage .upbox .textbox .title {
+        margin: 0 0 60px
+    }
+
+    #contactpage .upbox .textbox .title .line {
+        left: -15px;
+        width: 100%;
+        max-width: 550px
+    }
+
+    #contactpage .upbox .textbox .title .line .line1 {
+        top: 9px;
+        height: 30px;
+        width: 100px;
+        left: -5px;
+        background: url(/images/iot/contactline1.svg) 100% 100% no-repeat
+    }
+
+    #contactpage .upbox .textbox .title .line .line2 {
+        left: 75px
+    }
+
+    #contactpage .upbox .textbox .title .line.active .line2 {
+        width: calc(100% - 75px)
+    }
+
+    #contactpage .upbox .textbox .title .tt {
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 3px
+    }
+}
