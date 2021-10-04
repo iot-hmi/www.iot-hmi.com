@@ -395,6 +395,10 @@
     z-index: 3
 }
 
+.news_1 {
+    width: 25%;
+}
+
 @media (max-width:1650px) {
     #newspage .box .boxtitle {
         font-size: 45px
