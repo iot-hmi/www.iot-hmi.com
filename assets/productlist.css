@@ -12,7 +12,7 @@
 #samplepage .title .decoration1,
 #samplepage .title .tt {
     display: inline-block;
-    vertical-align: top
+    vertical-align: topㄟ
 }
 
 #samplepage .title .tt {
@@ -130,15 +130,27 @@
 
 #samplepage .box .listbox {
     display: flex;
-    justify-content: space-between;;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     /*border: 1px solid red;*/
     text-align: center;
-    height: calc(115rem / 3);
     width: calc(65vw - (100rem / 4.6875));
     color: #FFFFFF;
     font-family: 'Roboto';
+}
+
+#samplepage .box .itemcategory {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    color: #000000;
+    margin-bottom: 2rem;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
 #samplepage .box .itembox {
@@ -191,4 +203,34 @@
     /*border: 1px solid yellow;*/
 }
 
+.ubiquebox {
+    display: inline-block;
+    text-align: left;
+    height: fit-content;
+    width: calc(100rem / 4.6875);
+    color: #000000;
+    font-family: 'Roboto';
+    border: solid 1px;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
 
+.ubiquebox ul {
+    padding: 0;
+}
+
+.ubiquebox li {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+}
+
+.ubiquebox li:last-of-type {
+    border-bottom: none;
+}
+
+.ubiquebox .c_cat {
+    color: #C1272D;
+}
