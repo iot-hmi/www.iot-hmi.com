@@ -231,6 +231,10 @@
     border-bottom: none;
 }
 
+.ubiquebox li:hover {
+    background-color: #7CCAD1;
+}
+
 .ubiquebox .c_cat {
     color: #C1272D;
 }
