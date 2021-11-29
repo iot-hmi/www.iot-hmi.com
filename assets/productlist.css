@@ -232,9 +232,9 @@
 }
 
 .ubiquebox li:hover {
-    background-color: #7CCAD1;
+    color: #003B87;
 }
 
 .ubiquebox .c_cat {
-    color: #C1272D;
+    background-color: #7CCAD1;
 }
