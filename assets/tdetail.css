@@ -1,0 +1,601 @@
+#samplepage {
+    padding: 11rem 0 0;
+    position: relative;
+}
+
+#samplepage .title {
+    margin: 0 5vw 0 15vw;
+    width: 80vw;
+}
+
+#samplepage .title .decoration1,
+#samplepage .title .tt {
+    display: inline-block;
+    vertical-align: top
+}
+
+#samplepage .title .tt {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 43px;
+    letter-spacing: 5px;
+    text-transform: uppercase
+}
+
+#samplepage .title .tt .word {
+    height: 49px;
+    padding: 0 30px 0 0;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: 700
+}
+
+#samplepage .title .tt .word.notshow {
+    display: none
+}
+
+#samplepage .title .tt .line {
+    background: url(/images/iot/dark_titleline.svg) 100% 0 no-repeat;
+    height: 30px;
+    width: 100%;
+    position: relative
+}
+
+#samplepage .title .tt .line .sss {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: 0;
+    bottom: -5px
+}
+
+#samplepage .title .tt .line .ll {
+    width: calc(100% - 27px);
+    height: 30px;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+#samplepage .title .decoration1 {
+    width: 330px;
+    height: 50px;
+    margin: 0 0 0 -5px
+}
+
+#samplepage .title .decoration2 {
+    width: 305px;
+    height: 50px;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    padding: 8px 0 0;
+    margin: 0 -5px 0 0
+}
+
+#samplepage .title .decoration2 .rbtn,
+#samplepage .title .decoration2 input {
+    display: inline-block;
+    vertical-align: middle
+}
+
+#samplepage .title .decoration2 .rbtn {
+    width: 35px;
+    height: 30px;
+    cursor: pointer
+}
+
+#samplepage .title .decoration2 button {
+    width: 35px;
+    height: 30px;
+    background: none;
+    border: none;
+    outline: none
+}
+
+
+#samplepage .title .decoration2,
+#samplepage .title .pic {
+    display: inline-block;
+    vertical-align: top
+}
+
+#samplepage .title .pic {
+    width: 25px;
+    height: 50px
+}
+
+#samplepage .box {
+    width: 80vw;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    margin-top: calc(10rem / 3);
+    margin-bottom: calc(15rem / 3);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#samplepage .box .linkbox {
+    margin-left: -15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    text-align: center;
+    height: calc(115rem / 3);
+    width: 10vw;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+#samplepage .box .detailbox {
+    margin-left: 0;
+    display: inline-block;
+    width: 80vw;
+}
+
+#samplepage .box .samplebox {
+    margin-left: 0;
+    margin-bottom: calc(23rem / 3);
+    display: flex;
+    text-align: center;
+    height: calc(115rem / 3);
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+#samplepage .box .featurebox {
+    margin-left: 0;
+    margin-bottom: 4rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+#samplepage .box .featurebox .featuretitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#samplepage .box .featurebox .featurelistbox {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+#samplepage .box .featurebox .featurelistbox ul {
+    /*padding-left: 0;*/
+}
+
+#samplepage .box .featurebox .featurelistbox ul li::before {
+    content: "♦";
+    /* Insert content that looks like bullets */
+    position: absolute;
+    left: 0;
+    /*    color: blue; /* Or a color you prefer */
+}
+
+
+#samplepage .box .downloadbox {
+    margin-left: 0;
+    margin-bottom: calc(23rem / 3);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    color: #000000;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+#samplepage .box .downloadbox .downloadtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+#samplepage .box .downloadbox .downloadlistbox {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C1272D;
+    display: flex;
+    flex-direction: column;
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    /*border: solid 1px green;*/
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile .di {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    display: inline-block;
+    /*border: solid 1px blue;*/
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile .dt {
+    height: 3rem;
+    /*border: solid 1px red;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile .db {
+    height: 3rem;
+    /*border: solid 1px red;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 400;
+    color: #000000;
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile .dt span {
+    display: inline-block;
+    /*border: solid 1px purple;*/
+}
+
+#samplepage .box .downloadbox .downloadlistbox .downloadfile a,
+#samplepage .box .downloadbox .downloadlistbox .downloadfile a:hover {
+    text-decoration: none;
+    color: #003B87;
+}
+
+#samplepage .relatebox {
+    margin-left: 0;
+    margin-bottom: calc(16.5rem / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*border: 1px solid red;*/
+    height: calc(56rem / 3);
+    width: 100%;
+    color: #000000;
+    font-family: 'Roboto';
+    text-align: left;
+}
+
+#samplepage .relatebox .relatetitle {
+    display: inline-block;
+    height: calc(6rem / 3);
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+}
+
+#samplepage .relatebox .relateitemlist {
+    display: flex;
+    flex-direction: row;
+    /*border: 1px solid red;*/
+    height: calc(44rem / 3);
+}
+
+#samplepage .relatebox .relateitemlist .relateitem {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /*border: 1px solid red;*/
+    margin-right: 2rem;
+    flex: none;
+}
+
+#samplepage .relatebox .relateitemlist .relateitem .relateimgdiv {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    max-width: calc(45rem / 3);
+    height: calc(29rem / 3);
+}
+
+#samplepage .relatebox .relateitemlist .relateitem .relatelcmvendor {
+    display: inline-block;
+    margin-top: calc(4.5rem / 3);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#samplepage .relatebox .relateitemlist .relateitem .relatestarterkit {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#samplepage .box .samplebox .infobox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(67rem / 3);
+    width: 30%;
+    font-family: 'Roboto';
+}
+
+#samplepage .box .samplebox .infobox .info_category {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #7CCAD1;
+}
+
+#samplepage .box .samplebox .infobox .info_category .info_ade {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+#samplepage .box .samplebox .infobox .info_size {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 300;
+    color: #7CCAD1;
+}
+
+#samplepage .box .samplebox .infobox .info_part_no {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+#samplepage .box .samplebox .others {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 70%;
+}
+
+#samplepage .box .samplebox .others .upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(67rem / 3);
+    width: 100%;
+}
+
+#samplepage .box .samplebox .others .upper .primarypic {
+    display: inline-block;
+    height: 100%;
+    width: 65%;
+    /*border: 1px solid #000077;*/
+}
+
+#samplepage .box .samplebox .others .upper .rest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 28.5%;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea {
+    display: inline-block;
+    height: calc(11.5rem / 3);
+    width: 100%;
+    /*border: 1px solid #990099;*/
+    background-color: #F2F2F2;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea_expand {
+    height: calc(67rem / 3);
+    overflow-y: auto;
+    /*border: 1px solid #009900;*/
+    /*background-color: #F2F2F2;*/
+    z-index: 20;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul {
+    height: 100%;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_label {
+    font-size: 1.5rem;
+    color: #8B9296;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: flex;
+    width: calc(100% - 2.2rem);
+    justify-content: space-between;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_label .qlbl {
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_label .qarr {
+    font-weight: 900;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_cat {
+    font-size: 1rem;
+    color: #333333;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_item {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_item a {
+    text-decoration: none;
+    color: #8b9296;
+}
+
+#samplepage .box .samplebox .others .upper .rest .quicklinkarea .qlink_ul .qlink_item a:hover {
+    text-decoration: none;
+    color: #7CCAD1;
+}
+
+#samplepage .box .samplebox .others .upper .rest .price {
+    display: inline-block;
+    height: calc(11.5rem / 3);
+    color: #C1272D;
+    font-family: 'Roboto';
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#samplepage .box .samplebox .others .upper .rest .desc {
+    display: inline-block;
+    height: calc(28rem / 3);
+    width: 100%;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: calc(8rem / 3);
+    width: 100%;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .adebox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .adebox a,
+#samplepage .box .samplebox .others .upper .rest .shopbox .adebox a:hover {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+    /*border: 1px solid #00AAAA;*/
+    border-radius: calc(8rem / 6); 
+    background-color: #FFFFFF;
+    -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox a,
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox a:hover {
+    text-decoration: none;
+    text-align: center;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container {
+    display: flex;
+    justify-content: center;
+    height: 85%;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container .ebay_e {
+    color: #FF0000;
+    margin: auto;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container .ebay_b {
+    color: #0000FF;
+    margin: auto;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container .ebay_a {
+    color: #FBB03B;
+    margin: auto;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container .ebay_y {
+    color: #8CC63F;
+    margin: auto;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .ebaybox .ebay_img_container .ebay_img {
+    display: block;
+    max-height: 100%;
+    width: auto;
+}
+
+#samplepage .boxhide {
+    opacity: 0;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .amazonbox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+    /*border: 1px solid #00AAAA;*/
+    border-radius: calc(8rem / 6); 
+    background-color: #FFFFFF;
+    -webkit-filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3))
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .amazonbox .amazon_img_container {
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    margin: auto;
+}
+
+#samplepage .box .samplebox .others .upper .rest .shopbox .amazonbox .amazon_img_container .amazon_img {
+    display: block;
+    max-height: 100%;
+    width: auto;
+}
+
+#samplepage .box .samplebox .others .lower_container {
+    width: calc(100% + 4rem);
+    left: -2rem;
+    padding-left: 2rem;
+    /*border: 1px solid #007700;*/   
+}
+
+#samplepage .box .samplebox .others .lower {
+    display: flex;
+    flex-direction: row;
+    min-height: calc(27.5rem / 3 + 15px);
+    width: calc(100% - 2rem);
+    /*border: 1px solid #007700;*/   
+}
+
+#samplepage .box .samplebox .others .lower .thumbnail {
+    display: inline-block;
+    height: calc(27.5rem / 3);
+    max-width: calc(51rem / 3);
+    margin-right: 2rem;
+    flex: none;
+}
+
+body#web {
+    background-color: #8B9296;
+    color: #FFFFFF;
+}
+
+
