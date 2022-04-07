@@ -335,6 +335,7 @@
     font-size: 5rem;
     font-weight: 300;
     color: #7CCAD1;
+    margin-top: 1rem;
 }
 
 #samplepage .box .samplebox .infobox .info_part_no {
@@ -342,6 +343,8 @@
     font-size: 1.5rem;
     font-weight: 500;
     color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: 0;
 }
 
 #samplepage .box .samplebox .others {
