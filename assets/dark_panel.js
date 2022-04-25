@@ -79,8 +79,7 @@
                             movetext: function () {
                                 var e = document.documentElement.scrollTop + document.body.scrollTop;
                                 //var t = document.querySelector(".linebox").offsetTop;
-                                var n = document.querySelector(".upline").offsetTop;
-                                var o = document.querySelector(".downline").offsetTop;
+                                var n = document.querySelector(".upline").offsetTop;                                
                                 var r = document.querySelector(".descbox").offsetTop;
                                 //var a = document.querySelector(".tablebox").offsetTop;
                                 var i = document.querySelector(".newline").offsetTop;
@@ -92,7 +91,6 @@
                                 var c = .8 * window.innerHeight;
                                 //e > t - c ? $(".linebox").addClass("active") : $(".linebox").removeClass("active");
                                 e > n - c ? $(".upline").addClass("active") : $(".upline").removeClass("active");
-                                e > o - c ? $(".downline").addClass("active") : $(".downline").removeClass("active");
                                 e > r - c ? $(".descbox").addClass("active") : $(".descbox").removeClass("active");
                                 //e > a - c ? $(".tablebox").addClass("active") : $(".tablebox").removeClass("active");
                                 e > i - c ? $(".newline").addClass("active") : $(".newline").removeClass("active");
@@ -114,6 +112,15 @@
                                         v4.pause();
                                     }
                                 }
+                                if ( v3 ) {
+                                    var o = document.querySelector(".downline").offsetTop;
+                                    e > o - c ? $(".downline").addClass("active") : $(".downline").removeClass("active");
+                                    if ( e > v3.offsetTop - c ) {
+                                        v3.play();
+                                    } else {
+                                        v3.pause();
+                                    }
+                                }
                                 if ( e > v1.offsetTop - c ) {
                                     v1.play();
                                 } else {
@@ -123,11 +130,6 @@
                                     v2.play();
                                 } else {
                                     v2.pause();
-                                }
-                                if ( e > v3.offsetTop - c ) {
-                                    v3.play();
-                                } else {
-                                    v3.pause();
                                 }
                             }
                         }
