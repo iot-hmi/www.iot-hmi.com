@@ -214,6 +214,16 @@
     padding: 1.5rem 3rem 1.5rem 3rem;
 }
 
+.magnusbox li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.magnusbox li a:hover {
+    text-decoration: none;
+    color: #003B87;
+}
+
 .magnusbox ul {
     padding: 0;
 }

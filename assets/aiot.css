@@ -1,0 +1,153 @@
+#panelpage .box {
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 100vw;
+}
+
+#panelpage .box * .text {
+    font-family: 'Overpass';
+    font-size: 2rem;
+    text-align: left;
+}
+
+#panelpage .box * .head {
+    font-size:  4rem;
+    font-weight: 700;
+    margin-top: 0;
+    height: 10rem;
+    text-align: center;
+}
+
+#panelpage .box * .text {
+    font-size:  2rem;
+    font-weight: 700;
+}
+
+#panelpage .box * .text ul {
+    font-size:  1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+#panelpage .box * .text ul li::before {
+    content: "♦";
+    /* Insert content that looks like bullets */
+    position: absolute;
+    left: 0;
+    /*    color: blue; /* Or a color you prefer */
+}
+
+#panelpage .box * .text ul li {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#panelpage .box .part1 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    height: 40rem;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#panelpage .box .part1 .info {
+    display: flex;
+    flex-direction: row;
+}
+
+#panelpage .box .part1 .info .pic {
+    margin-top: 0;
+    margin-left: 0;
+    height: 30rem;
+    width: 40vw;
+    background-image: url(/assets/images/aiot-01.png);
+    background-size: auto 30rem;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#panelpage .box .part1 .info .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    width: 40vw;
+}
+
+#panelpage .box .part1 .info .text ul {
+    margin-bottom: 5rem;
+}
+
+
+#panelpage .box .part2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 40rem;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#panelpage .box .part2 .info {
+    display: flex;
+    flex-direction: row;
+}
+
+#panelpage .box .part2 .info .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    width: 40vw;
+}
+
+#panelpage .box .part2 .pic {
+    margin-top: 0;
+    margin-left: 0;
+    height: 30rem;
+    width: 40vw;
+    background-image: url(/assets/images/aiot-02.png);
+    background-size: auto 30rem;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+#panelpage .box .part3 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#panelpage .box .part3 .info {
+    display: flex;
+    flex-direction: row;
+}
+
+#panelpage .box .part3 .info .pic {
+    margin-top: 0;
+    margin-left: 0;
+    height: 30rem;
+    width: 40vw;
+    display: flex;
+}
+
+#panelpage .box .part3 .info .text {
+    margin-top: 0;
+    margin-left: 5vw;
+    width: 40vw;
+}
+
+#panelpage .box .part4 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 30rem;
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+#panelpage .box .part4 .pic {
+    margin-top: 0;
+    margin-left: 0;
+    height: 30rem;
+    width: 80vw;
+    background-image: url(/assets/images/aiot-03.png);
+    background-size: auto 30rem;
+    background-repeat: no-repeat;
+    display: flex;
+}

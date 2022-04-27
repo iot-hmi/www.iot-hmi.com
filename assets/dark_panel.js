@@ -78,22 +78,39 @@
                         methods: {
                             movetext: function () {
                                 var e = document.documentElement.scrollTop + document.body.scrollTop;
-                                //var t = document.querySelector(".linebox").offsetTop;
-                                var n = document.querySelector(".upline").offsetTop;                                
-                                var r = document.querySelector(".descbox").offsetTop;
-                                //var a = document.querySelector(".tablebox").offsetTop;
-                                var i = document.querySelector(".newline").offsetTop;
-                                var v1 = document.getElementById("v1");
-                                var v2 = document.getElementById("v2");
-                                var v3 = document.getElementById("v3");
-                                var v4 = document.getElementById("v4");
-                                var v5 = document.getElementById("v5");
                                 var c = .8 * window.innerHeight;
-                                //e > t - c ? $(".linebox").addClass("active") : $(".linebox").removeClass("active");
-                                e > n - c ? $(".upline").addClass("active") : $(".upline").removeClass("active");
-                                e > r - c ? $(".descbox").addClass("active") : $(".descbox").removeClass("active");
+
+                                //var t = document.querySelector(".linebox").offsetTop;
+                                //var a = document.querySelector(".tablebox").offsetTop;
+                                //e > t - c ? $(".linebox").addClass("active") : $(".linebox").removeClass("active");                                
                                 //e > a - c ? $(".tablebox").addClass("active") : $(".tablebox").removeClass("active");
-                                e > i - c ? $(".newline").addClass("active") : $(".newline").removeClass("active");
+
+                                var uc = document.querySelector(".upline");
+                                if ( uc ) {
+                                    var n = document.querySelector(".upline").offsetTop;                                
+                                    e > n - c ? $(".upline").addClass("active") : $(".upline").removeClass("active");
+                                }
+                                
+                                var oc = document.querySelector(".downline");
+                                if ( oc ) { 
+                                    var o = document.querySelector(".downline").offsetTop;
+                                    e > o - c ? $(".downline").addClass("active") : $(".downline").removeClass("active");
+                                }
+                                
+                                var rc = document.querySelector(".descbox");
+                                if ( rc ) {
+                                    var r = document.querySelector(".descbox").offsetTop;
+                                    e > r - c ? $(".descbox").addClass("active") : $(".descbox").removeClass("active");
+                                } 
+
+                                var ic = document.querySelector(".newline");
+                                if ( ic ) {
+                                    var i = document.querySelector(".newline").offsetTop;
+                                    e > i - c ? $(".newline").addClass("active") : $(".newline").removeClass("active");
+                                } 
+                                
+                                // videos play & pause
+                                var v5 = document.getElementById("v5");
                                 if ( v5 ) {
                                     var j = document.querySelector(".vn5").offsetTop;
                                     e > j - c ? $(".vn5").addClass("active") : $(".vn5").removeClass("active");
@@ -103,6 +120,7 @@
                                         v5.pause();
                                     }
                                 }
+                                var v4 = document.getElementById("v4");
                                 if ( v4 ) {
                                     var j = document.querySelector(".vn4").offsetTop;
                                     e > j - c ? $(".vn4").addClass("active") : $(".vn4").removeClass("active");
@@ -112,24 +130,29 @@
                                         v4.pause();
                                     }
                                 }
+                                var v3 = document.getElementById("v3");
                                 if ( v3 ) {
-                                    var o = document.querySelector(".downline").offsetTop;
-                                    e > o - c ? $(".downline").addClass("active") : $(".downline").removeClass("active");
                                     if ( e > v3.offsetTop - c ) {
                                         v3.play();
                                     } else {
                                         v3.pause();
                                     }
                                 }
-                                if ( e > v1.offsetTop - c ) {
-                                    v1.play();
-                                } else {
-                                    v1.pause();
+                                var v2 = document.getElementById("v2");
+                                if ( v2 ) {
+                                    if ( e > v2.offsetTop - c ) {
+                                        v2.play();
+                                    } else {
+                                        v2.pause();
+                                    }    
                                 }
-                                if ( e > v2.offsetTop - c ) {
-                                    v2.play();
-                                } else {
-                                    v2.pause();
+                                var v1 = document.getElementById("v1");
+                                if ( v1 ) {
+                                    if ( e > v1.offsetTop - c ) {
+                                        v1.play();
+                                    } else {
+                                        v1.pause();
+                                    }    
                                 }
                             }
                         }
