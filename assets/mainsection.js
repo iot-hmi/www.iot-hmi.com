@@ -115,11 +115,14 @@
                         },
                         methods: {
                             moveline: function () {
-                                var t = document.documentElement.scrollTop + document.body.scrollTop,
-                                    a = document.querySelector(".tablebox").offsetTop,
-                                    r = .8 * window.innerHeight,
-                                    o = window.innerHeight;
-                                t > a - r ? $(".tablebox").addClass("active") : $(".tablebox").removeClass("active");
+                                var t = document.documentElement.scrollTop + document.body.scrollTop;
+                                var r = .8 * window.innerHeight;
+                                var o = window.innerHeight;
+                                var ac = document.querySelector(".tablebox");
+                                if (ac) {
+                                    var a = document.querySelector(".tablebox").offsetTop;
+                                    t > a - r ? $(".tablebox").addClass("active") : $(".tablebox").removeClass("active");
+                                }
                                 var c = window.pageYOffset;
                                 n(document.querySelectorAll(".downlist"), function (t) {
                                     var n = t.offsetTop;

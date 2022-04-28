@@ -1,0 +1,45 @@
+.linkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 70vw;
+    height: 33rem;
+}
+
+.linkbox .pic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+}
+
+.linkbox .pic1 {
+    height: 15rem;
+    width: 22vw;
+    background-image: url(/assets/images/link-01.png);
+}
+
+.linkbox .pic2 {
+    height: 15rem;
+    width: 46vw;
+    background-image: url(/assets/images/link-02.png);
+}
+
+.linkbox .pic3 {
+    height: 15rem;
+    width: 22vw;
+    background-image: url(/assets/images/link-03.png);
+}
+
+.linkbox .pic4 {
+    height: 15rem;
+    width: 22vw;
+    background-image: url(/assets/images/link-04.png);
+}
+
+.linkbox .pic5 {
+    height: 15rem;
+    width: 22vw;
+    background-image: url(/assets/images/link-05.png);
+}
