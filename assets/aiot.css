@@ -70,6 +70,7 @@
     margin-top: 0;
     margin-left: 5vw;
     width: 40vw;
+    padding-top: 5rem;
 }
 
 #panelpage .box .part1 .info .text ul {
@@ -94,6 +95,7 @@
     margin-top: 0;
     margin-left: 5vw;
     width: 40vw;
+    padding-top: 5rem;
 }
 
 #panelpage .box .part2 .pic {
@@ -121,7 +123,11 @@
 #panelpage .box .part3 .info .pic {
     margin-top: 0;
     margin-left: 0;
+    height: 30rem;
     width: 40vw;
+    background-image: url(/assets/images/aiot-03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
 }
 
@@ -131,21 +137,3 @@
     width: 40vw;
 }
 
-#panelpage .box .part4 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    height: 30rem;
-    width: 80vw;
-    margin-left: 10vw;
-}
-
-#panelpage .box .part4 .pic {
-    margin-top: 0;
-    margin-left: 0;
-    height: 30rem;
-    width: 80vw;
-    background-image: url(/assets/images/aiot-03.png);
-    background-size: auto 30rem;
-    background-repeat: no-repeat;
-    display: flex;
-}
