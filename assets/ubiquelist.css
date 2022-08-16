@@ -139,6 +139,25 @@
     font-family: 'Roboto';
 }
 
+#samplepage .box .f_eb {
+    width: calc(65vw - (100rem / 4.6875));
+    height: auto;
+}
+
+#samplepage .eb_bottom {
+    width: width: 100vw;
+    height: auto;
+    margin-top: 10rem;
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto';
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 10rem;
+
+}
+
 #samplepage .box .itemcategory {
     height: 3rem;
     display: flex;
