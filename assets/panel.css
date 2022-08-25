@@ -541,3 +541,65 @@
         margin: 0 0 50px 30%
     }
 }
+
+.downloadbox {
+    color: #000000;
+    font-family: 'Roboto';
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(82% - 150px);
+    margin: 5rem 0 0 15%;
+    padding: 0 50px;
+}
+
+.downloadbox .downloadtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.downloadbox .downloadlistbox {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+
+.downloadbox .downloadlistbox .downloadfile {
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.downloadbox .downloadlistbox .downloadfile .di {
+    height: 3rem;
+    width: 3rem;
+    color: #C1272D;
+    margin-right: 1rem;
+    display: inline-block;
+}
+
+.downloadbox .downloadlistbox .downloadfile .dt {
+    height: 3rem;
+    /*border: solid 1px red;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.downloadbox .downloadlistbox .downloadfile a,
+.downloadbox .downloadlistbox .downloadfile a:hover {
+    text-decoration: none;
+    color: #003B87;
+}
+
+.downloadbox .downloadlistbox .downloadfile .dt .dp {
+
+}
+
+.downloadbox .downloadlistbox .downloadfile .dt .da {
+    margin-left: 1rem;
+}
