@@ -34,7 +34,7 @@
 #crtlRowBtnFrame {
     position: absolute;
     z-index: 10;
-    top: 80%;
+    bottom: 3%;
     left: 95%;
 }
 
