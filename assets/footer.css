@@ -17,7 +17,7 @@ footer.active {
 
 #footerpage .footertop {
     position: relative;
-    height: 105px;
+    height: 5rem;
     width: 100%
 }
 
@@ -47,17 +47,17 @@ footer.active {
 
 #footerpage .gotop {
     position: absolute;
-    width: 45px;
-    height: 45px;
-    top: 50px;
-    right: 120px;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 0;
+    right: 8rem;
     cursor: pointer
 }
 
 #footerpage .gotop .hov,
 #footerpage .gotop .nor {
-    width: 45px;
-    height: 45px;
+    width: 2.5rem;
+    height: 2.5rem;
     position: absolute;
     transition: opacity .5s;
     -moz-transition: opacity .5s;
@@ -84,32 +84,26 @@ footer.active {
 
 #footerpage .footerbox {
     background: #003B87;
-    padding: 30px 0
+    /*padding: 30px 0*/
 }
 
 #footerpage .footerbox .fi {
-    margin: 2.5rem auto;
-    height: 8rem;
+    margin: 1.5rem 8rem 0 8rem;
+    height: 4rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#footerpage .footerbox .fi .fr1 {
+#footerpage .footerbox .fi .line {
     display: flex;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    width: 6rem;
-    height: 6rem;
-}
-
-#footerpage .footerbox .fi .fr1 .fqr{
-    display: flex;
-    background-color: #FFFFFF;
+    height: 2px;
+    width: 100%;
+    background: #fff;
 }
 
 #footerpage .footerbox .fi .fr2 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     margin-top: 1rem;
     margin-left: 2rem;;
 }
@@ -124,40 +118,40 @@ footer.active {
     flex-direction: row;
 }
 
+#footerpage .footerbox .fi .fr2 .fc3 {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+#footerpage .footerbox .fi .fr2 .fc4 {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    width: 2rem;
+}
+
 #footerpage .footerbox .fi .fr2 * .fi1 {
     display: flex;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
 }
 
 #footerpage .footerbox .fi .fr2 * .fi2 {
     display: flex;
-    margin-left: 1rem;
-    height: 3rem;
+    margin-right: 2rem;
+    height: 2rem;
     color: #FFFFFF;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
     align-items: center;
     font-family: 'Roboto';
 }
 
-#footerpage .footerbox .fi .fr3 {
-    display: none;
-}
-
-#footerpage .footerbox .fi .fr3 .flogo {
-    height: 100%;
-}
-
-#footerpage .footerbox .fi .fr4 {
-    display: flex;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 8rem;
-}
-
-#footerpage .footerbox .fi .fr4 .flogo {
+#footerpage .footerbox .fi .fr2 * .ficon {
     height: 100%;
 }
 
@@ -165,14 +159,16 @@ footer.active {
     color: #FFFFFF;
     font-size: 0.8rem;
     letter-spacing: 3px;
-    text-align: center;
+    margin-left: 8rem;
+    /*margin-bottom: 4.5rem;*/
+    height: 5.3rem; /* 0.8 + 4.5 */
     font-family: 'Roboto'
 }
 
 #footerpage .footerbox .footermenu {
     /*max-width: 1000px;*/
-    margin: 0 auto;
-    text-align: center
+    margin: 1.5rem 8rem 0 8rem;
+    /*text-align: center*/
 }
 
 #footerpage .footerbox .footermenu .list {
@@ -181,7 +177,7 @@ footer.active {
     font-weight: 500;
     display: inline-block;
     vertical-align: top;
-    margin: 50px
+    margin: 1.5rem 100px 1.5rem 0
 }
 
 #footerpage .footerbox .footermenu .list a,
@@ -198,7 +194,7 @@ footer.active {
 }
 
 #footerpage .footerbox .footermenu .list .line {
-    height: 2px;
+    height: 1px;
     width: 100%;
     background: #fff;
     transition: all .5s;
@@ -381,25 +377,4 @@ footer.active {
         font-family: 'Roboto';
     }
     
-    #footerpage .footerbox .fi .fr3 {
-        display: flex;
-        margin-top: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-        width: 60vw;
-        height: 8rem;
-        justify-content: center;
-    }
-    
-    #footerpage .footerbox .fi .fr3 .flogo {
-        height: 100%;
-    }
-
-    #footerpage .footerbox .fi .fr4 {
-        display: none;
-    }
-    
-    #footerpage .footerbox .fi .fr3 .flogo {
-        height: 100%;
-    }
 }
