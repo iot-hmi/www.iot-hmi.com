@@ -84,7 +84,7 @@ footer.active {
 
 #footerpage .footerbox {
     background: #003B87;
-    /*padding: 30px 0*/
+    overflow: hidden;
 }
 
 #footerpage .footerbox .fi {
