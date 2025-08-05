@@ -1,0 +1,66 @@
+.appcontent {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    text-align: center;
+    display: block;
+}
+
+.appcontent .img_content {
+    margin-bottom: 8rem;
+}
+
+.appcontent .downloadfile {
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    color: #003b87;
+    border: 5px solid;
+    border-radius: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: fit-content; /* 重點：讓寬度依據內容撐開 */
+    padding: 0 2.5rem; /* 給左右 padding，避免內容貼邊 */
+    margin: 3rem auto 0 auto; /* 上 auto 下都有設，會水平置中 */
+    font-weight: 700;
+}
+
+.appcontent .downloadfile .di {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1rem;
+    display: inline-block;
+    /*border: solid 1px blue;*/
+}
+
+.appcontent .downloadfile .dt {
+    height: 3rem;
+    /*border: solid 1px red;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.appcontent .downloadfile .db {
+    height: 3rem;
+    /*border: solid 1px red;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 400;
+    color: #000000;
+}
+
+.appcontent .downloadfile .dt span {
+    display: inline-block;
+    /*border: solid 1px purple;*/
+}
+
+.appcontent .downloadfile a,
+.appcontent .downloadfile a:hover {
+    text-decoration: none;
+    color: #003B87;
+}
